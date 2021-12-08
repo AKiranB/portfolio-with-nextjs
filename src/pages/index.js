@@ -13,14 +13,13 @@ import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
 import { Footer } from '../components/Footer'
+import BackgroundAnimation from '../components/BackgroundAnimation'
 
 const Index = () => (
   <Container height="100vh">
     <Hero />
     <Main>
-      <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
-      </Text>
+      <BackgroundAnimation />
 
       <List spacing={3} my={0}>
         <ListItem>
