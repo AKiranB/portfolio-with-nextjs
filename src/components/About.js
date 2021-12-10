@@ -5,11 +5,11 @@ import { Box, Badge, Flex, Image, Img } from "@chakra-ui/react";
 
 const About = () => {
     return (
-        <Flex justifyContent="center" alignItems="center" height="40vh" mt={'5%'}>
+        <Flex justifyContent="center" alignItems="center" width='70%' mb={'5%'} mt={'5%'}>
             <Box maxW='70vh' borderWidth='1px' borderRadius='lg' >
                 <Box p='6'>
                     <Box display='flex'>
-                        <Badge borderRadius='full' px='2' colorScheme='teal' fontSize={'20px'}>
+                        <Badge borderRadius='full' px='2' colorScheme='teal' fontSize={'1vw'}>
                             About me
                         </Badge>
                         <Box

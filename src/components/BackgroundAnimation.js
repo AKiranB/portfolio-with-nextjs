@@ -2,8 +2,7 @@ import React from 'react';
 
 const BackgroundAnimation = () => (
     <div style={{
-        maxHeight: '25%',
-        maxWidth: '25%',
+        width: '30vw',
         marginLeft: '30%',
         marginBottom: '0',
         marginTop: '0',
