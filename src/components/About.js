@@ -1,5 +1,5 @@
 import { StarIcon } from "@chakra-ui/icons";
-import { Box, Badge, Flex, Image, Img } from "@chakra-ui/react";
+import { Box, Badge, Flex, Image, Img, Heading } from "@chakra-ui/react";
 
 
 
@@ -9,10 +9,9 @@ const About = () => {
             <Box maxW='70vh' borderWidth='1px' borderRadius='lg' >
                 <Box p='6'>
                     <Box display='flex'>
-                        <Badge borderRadius='full' px='2' colorScheme='teal' fontSize={'1vw'}>
+                        <Heading borderRadius={'10px'} color={"#28b463 "}>
                             About me
-
-                        </Badge>
+                        </Heading>
 
                         <Box
                             color='gray.500'
