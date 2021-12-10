@@ -13,16 +13,13 @@ import { Flex } from '@chakra-ui/react';
 
 const Index = () => (
   <>
-    <Navbar />
-    <Container height="100vh" >
-      <Main>
-        <BackgroundAnimation />
-        <Flex direction={'column'} align={'center'} justifyContent={'space-evenly'} padding={'20px'}>
-          <Hero />
-          <About />
-        </Flex>
-      </Main>
-    </Container>
+
+    <BackgroundAnimation />
+    <Flex direction={'column'} align={'center'} padding={'50px'}>
+      <Hero />
+      <About />
+    </Flex>
+
   </>
 )
 

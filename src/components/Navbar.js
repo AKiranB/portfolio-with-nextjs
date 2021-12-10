@@ -6,17 +6,13 @@ import {
     Flex,
     Text,
     Button,
-    useDisclosure
+    useDisclosure,
+
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
+import Link from "next/link";
 
-// Note: This code could be better,
-// so I'd recommend you to understand how I solved and you could write yours better :)
-// Good luck! 🍀
-
-// Update: Check these awesome headers from Choc UI 👇
-// https://choc-ui.tech/docs/elements/headers
 const Navbar = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const handleToggle = () => (isOpen ? onClose() : onOpen());
@@ -34,8 +30,15 @@ const Navbar = (props) => {
             {...props}
         >
             <Flex align="center" mr={5}>
-                <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-                    Portfolio
+                <Heading
+                    _hover={{ color: 'blue' }}
+                    as="h1"
+                    size="lg"
+                    letterSpacing={"tighter"}
+                >
+                    <Link href='/'>
+                        Kiran Boyle
+                    </Link>
                 </Heading>
             </Flex>
 
