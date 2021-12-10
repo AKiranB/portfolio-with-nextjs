@@ -1,10 +1,13 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, Image } from '@chakra-ui/react'
+
 
 export const Hero = ({ title }) => (
-  <Flex>
+
+  <Flex align={'center'} justifyContent={'space-evenly'}>
+    <Image mr={'20px'} width={'vw'} height={'5vw'} src={'/kiran.jpg'} alt='me' borderRadius={'60px'} />
     <Heading
       fontSize="4vw"
-      bgGradient="linear(to-l, #7928CA, #FF0080)"
+      bgGradient="linear(to-l,  #28b463 ,  #3342ff )"
       bgClip="text"
     >
       {title}
