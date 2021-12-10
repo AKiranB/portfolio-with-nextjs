@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         }}
       >
         <Navbar />
-        <Container height="100vh" >
+        <Container height="auto" >
           <Main>
             <Component {...pageProps} />
           </Main>

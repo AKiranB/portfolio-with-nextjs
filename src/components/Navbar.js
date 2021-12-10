@@ -53,10 +53,14 @@ const Navbar = (props) => {
                 alignItems="center"
                 flexGrow={1}
                 mt={{ base: 4, md: 0 }}
+                pr={'10px'}
+                fontSize={'30px'}
             >
-                <Text>Docs</Text>
-                <Text>Examples</Text>
-                <Text>Blog</Text>
+                <Text>
+                    <Link href='/'>
+                        Projects
+                    </Link>
+                </Text>
             </Stack>
 
             <Box
