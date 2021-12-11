@@ -1,6 +1,6 @@
 import { Box, Badge, Flex, Text, List, ListItem, Heading } from "@chakra-ui/react";
 import SkillCard from "./SkillCard";
-import { BsPersonBadge } from 'react-icons/Bs';
+import { BsPersonBadge } from 'react-icons/bs';
 import { IoServerOutline } from 'react-icons/io5'
 import { GiGearStickPattern } from 'react-icons/gi'
 
