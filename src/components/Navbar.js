@@ -9,7 +9,7 @@ import {
     useDisclosure,
 
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
 import Link from "next/link";
 
@@ -67,7 +67,9 @@ const Navbar = (props) => {
                 display={{ base: isOpen ? "block" : "none", md: "block" }}
                 mt={{ base: 4, md: 0 }}
             >
+
                 <DarkModeSwitch />
+                <SunIcon />
             </Box>
         </Flex>
     );
