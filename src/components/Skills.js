@@ -1,18 +1,47 @@
 import { Box, Badge, Flex, Text, List, ListItem, Heading } from "@chakra-ui/react";
+import SkillCard from "./SkillCard";
+import { BsPersonBadge } from 'react-icons/Bs';
+import { IoServerOutline } from 'react-icons/io5'
+import { GiGearStickPattern } from 'react-icons/gi'
+
 
 const Skills = () => {
-    const skillData = {
-        frontend: [
-            'React',
-            'Next',
-            'Chakra UI',
-            'Material UI',
-            'HTML5',
-            'CSS3'
-        ],
-        backend: [],
-        versionControl: []
-    };
+
+    const skillsData = [
+        {
+            title: 'Frontend',
+            skills: [
+                'React',
+                'Next',
+                'Chakra UI',
+                'Material UI',
+                'HTML5',
+                'CSS3',
+                'Bootstrap'
+            ],
+            icon: <BsPersonBadge fontSize={'30px'} />
+        },
+        {
+            title: 'Version Control',
+            skills: [
+                'Git',
+                'GitHub'
+            ],
+            icon: <GiGearStickPattern fontSize={'30px'} />
+        },
+        {
+            title: 'Backend',
+            skills: [
+                'Express',
+                'MongoDB',
+                'Node',
+                'GraphQL',
+            ],
+            icon: <IoServerOutline fontSize={'30px'} />
+        },
+
+
+    ];
 
     return (
         <Flex
@@ -29,54 +58,21 @@ const Skills = () => {
                         textAlign={'center'}
                         borderRadius={'10px'}
                         color={"#28b463 "}
+                        mb='3%'
                     >
                         Skills
                     </Heading>
                     <Flex>
-                        <Flex
-                            borderWidth='1px'
-                            borderRadius='lg'
-                            borderColor={'grey'}
-                            m='10px' p='10px'
-                            direction={'column'}
-                            justifyContent={'center'}
-                            alignItems={'center'}>
-
-                            <Heading
-                                borderRadius='full'
-                                px='2'
-                                fontSize={'25px'}
-                            >
-                                Frontend
-                            </Heading>
-                            <Box m='10px' p='10px' w='15vw'>
-                                <Text textAlign={'Left'}>
-                                    <List>
-                                        {skillData.frontend.map((skill, i) => {
-                                            return (
-                                                <ListItem key={i}>
-                                                    <Badge
-                                                        colorScheme={'blue'}
-                                                        fontSize={'medium'}
-                                                        borderRadius={'5px'}
-                                                        m={'5px'}
-                                                    >
-                                                        {skill}
-                                                    </Badge>
-                                                </ListItem>
-                                            )
-                                        })
-                                        };
-                                    </List>
-                                </Text>
-                            </Box>
-                        </Flex>
-                        <Box m='10px' p='10px' w='15vw' flex='' >
-                            <Text>I have over 7 years professional experience as a sound designer, audio engineer, and post-production engineer, working on documentaries, for startups and in events. I have recently completed Ironhack’s</Text>
-                        </Box>
-                        <Box m='10px' p='10px' w='15vw' flex='' >
-                            <Text>I have over 7 years professional experience as a sound designer, audio engineer, and post-production engineer, working on documentaries, for startups and in events. I have recently completed Ironhack’s</Text>
-                        </Box>
+                        {skillsData.map((skill, i) => {
+                            return (
+                                <SkillCard
+                                    title={skill.title}
+                                    skillsData={skill.skills}
+                                    icon={skill.icon}
+                                    key={i}
+                                />
+                            )
+                        })}
                     </Flex>
                 </Box>
             </Box>
