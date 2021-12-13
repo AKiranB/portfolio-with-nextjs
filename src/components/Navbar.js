@@ -10,7 +10,7 @@ import {
 
 } from "@chakra-ui/react";
 import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
-import { DarkModeSwitch } from '../components/DarkModeSwitch';
+import { DarkModeSwitch } from '../components/chakra/DarkModeSwitch';
 import Link from "next/link";
 
 const Navbar = (props) => {
