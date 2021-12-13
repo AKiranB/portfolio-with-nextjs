@@ -1,8 +1,8 @@
-import { Hero } from '../components/Hero';
+import { Hero } from '../components/hero/Hero';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 import About from '../components/About'
 import { Flex } from '@chakra-ui/react';
-import Skills from '../components/Skills';
+import Skills from '../components/skills/Skills';
 
 
 const Index = () => (
@@ -11,6 +11,7 @@ const Index = () => (
       direction={'column'}
       align={'center'}
       padding={'2vh'}
+      mt={'50px'}
       justifyContent={'space-evenly'}
     >
       <Hero />

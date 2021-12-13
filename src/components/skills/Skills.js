@@ -39,8 +39,6 @@ const Skills = () => {
             ],
             icon: <IoServerOutline fontSize={'30px'} />
         },
-
-
     ];
 
     return (
@@ -57,7 +55,6 @@ const Skills = () => {
                     <Heading
                         textAlign={'center'}
                         borderRadius={'10px'}
-                        color={"#28b463 "}
                         mb='3%'
                     >
                         Skills
