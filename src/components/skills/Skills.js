@@ -43,22 +43,23 @@ const Skills = () => {
 
     return (
         <Flex
+            id='skills'
             direction={'column'}
             justifyContent="center"
             alignItems="center"
             width='auto'
             mb={'5%'}
-            mt={'5%'}
+            mt={'10%'}
         >
             <Box maxW='auto' >
                 <Box p='6'>
-                    <Heading
+                    <Box
                         textAlign={'center'}
-                        borderRadius={'10px'}
+                        textStyle={'h1'}
                         mb='3%'
                     >
-                        Skills
-                    </Heading>
+                        My Skills
+                    </Box>
                     <Flex>
                         {skillsData.map((skill, i) => {
                             return (

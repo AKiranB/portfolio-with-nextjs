@@ -16,6 +16,20 @@ const theme = extendTheme({
   },
   fonts,
   breakpoints,
+  textStyles: {
+    h1: {
+      fontSize: '35px',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+      color: '#345beb',
+    },
+    h2: {
+      fontSize: '35px',
+      lineHeight: '110%',
+      letterSpacing: '-2%',
+
+    },
+  },
   icons: {
     logo: {
       path: (
