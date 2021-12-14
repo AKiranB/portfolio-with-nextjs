@@ -16,7 +16,6 @@ import Link from "next/link";
 const Navbar = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const handleToggle = () => (isOpen ? onClose() : onOpen());
-
     return (
         <Flex
             as="nav"
@@ -32,9 +31,8 @@ const Navbar = (props) => {
             <Flex align="center" mr={5}>
                 <Heading
                     _hover={{ color: 'blue' }}
-                    as="h1"
-                    size="lg"
                     letterSpacing={"tighter"}
+                    pr='15px'
                 >
                     <Link href='/'>
                         Kiran Boyle
@@ -45,7 +43,6 @@ const Navbar = (props) => {
             <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
                 <HamburgerIcon />
             </Box>
-
             <Stack
                 direction={{ base: "column", md: "row" }}
                 display={{ base: isOpen ? "block" : "none", md: "flex" }}
@@ -53,21 +50,23 @@ const Navbar = (props) => {
                 alignItems="center"
                 flexGrow={1}
                 mt={{ base: 4, md: 0 }}
-                pr={'10px'}
+                pr={'15px'}
                 fontSize={'30px'}
             >
-                <Text>
-                    <Link href='/'>
-                        Projects
+                <Text pr={'15px'}>
+                    <Link href='#skills'>
+                        Skills
                     </Link>
                 </Text>
-            </Stack>
+                <Link href='/'>
+                    Projects
+                </Link>
 
+            </Stack>
             <Box
                 display={{ base: isOpen ? "block" : "none", md: "block" }}
                 mt={{ base: 4, md: 0 }}
             >
-
                 <DarkModeSwitch />
                 <SunIcon />
             </Box>

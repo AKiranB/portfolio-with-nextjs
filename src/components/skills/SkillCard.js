@@ -14,14 +14,15 @@ const SkillCard = ({ title, skillsData, icon }) => {
             justifyContent={'flex-start'}
             alignItems={'center'}>
             <Flex>
-                <Heading
+                <Box
+                    textStyle={'h2'}
                     borderRadius='full'
                     px='2'
                     fontSize={'25px'}
                     paddig={'10px'}
                 >
                     {title}
-                </Heading>
+                </Box>
                 {icon}
 
             </Flex>
