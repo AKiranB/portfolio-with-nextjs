@@ -9,17 +9,20 @@ const SkillCard = ({ title, skillsData, icon }) => {
             borderWidth='1px'
             borderRadius='lg'
             borderColor={'grey'}
-            m='10px' p='10px'
+            m='25px' p='15px'
             direction={'column'}
             justifyContent={'flex-start'}
-            alignItems={'center'}>
+            alignItems={'center'}
+            bgGradient="linear(to-l,  #63A088 ,  #3342ff )"
+        >
             <Flex>
                 <Box
                     textStyle={'h2'}
                     borderRadius='full'
                     px='2'
                     fontSize={'25px'}
-                    paddig={'10px'}
+
+
                 >
                     {title}
                 </Box>
@@ -33,7 +36,7 @@ const SkillCard = ({ title, skillsData, icon }) => {
                             return (
                                 <ListItem key={i}>
                                     <Badge
-                                        colorScheme={'blue'}
+                                        colorScheme={'black'}
                                         fontSize={'medium'}
                                         borderRadius={'5px'}
                                         m={'5px'}

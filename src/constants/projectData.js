@@ -8,8 +8,8 @@ const projectData = [
     },
     {
         title: 'Fruits and Bats',
-        img: '/archimidi.png',
-        description: 'Archimidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview midi files.',
+        img: '/fruits-bats.png',
+        description: 'Fruits and Bats is a side scrolling, jump and run game built with Javascript and the P5 library Collect as much fruit as you can within the time limit and avoid the fire and bats!',
         appUrl: 'https://akiranb.github.io/Fruits-Bats/',
         githubUrl: 'url'
     },
@@ -22,7 +22,7 @@ const projectData = [
     },
     {
         title: 'NextJS Portfolio',
-        img: '/archimidi.png',
+        img: '/portfolio.png',
         description: 'Archimidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview midi files.',
         appUrl: 'https://kiran-boyle.vercel.app/',
         githubUrl: 'url'
