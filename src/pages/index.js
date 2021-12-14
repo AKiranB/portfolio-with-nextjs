@@ -3,6 +3,7 @@ import BackgroundAnimation from '../components/BackgroundAnimation';
 import About from '../components/About'
 import { Flex } from '@chakra-ui/react';
 import Skills from '../components/skills/Skills';
+import Projects from '../components/projects/Projects';
 
 
 const Index = () => (
@@ -18,6 +19,7 @@ const Index = () => (
       <BackgroundAnimation />
       <About />
       <Skills />
+      <Projects />
     </Flex>
 
   </>

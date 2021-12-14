@@ -1,6 +1,7 @@
 import { StarIcon } from "@chakra-ui/icons";
 import { Box, Badge, Flex, Image, Img, Heading } from "@chakra-ui/react";
 
+
 const About = () => {
     return (
         <Flex
@@ -10,12 +11,6 @@ const About = () => {
             mb={'0'}
             mt={'5%'}>
             <Box maxW='70vh'>
-
-                <Box
-                    textStyle={'h1'}
-                    isplay='flex'>
-                    About me
-                </Box>
                 <Box>
                     <br />
                     I have over 7 years professional experience as a sound designer, audio engineer, and post-production engineer, working on documentaries, for startups and in events. I have recently completed Ironhack’s
