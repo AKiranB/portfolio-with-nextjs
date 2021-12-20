@@ -3,13 +3,16 @@ const ProjectCard = ({ title, description, img, url }) => {
 
     return (
         <Flex
-            borderWidth='1px'
-            borderRadius='lg'
-            borderColor={'grey'}
-            m='10px' p='10px'
+            backgroundColor={'grey'}
+            m='30px' p='30px'
             direction={'column'}
             justifyContent={'flex-start'}
-            alignItems={'center'}>
+            alignItems={'center'}
+            borderRadius='lg'
+            height='500px'
+            bgGradient="linear(to-l,  #63A088 ,  #3342ff )"
+        >
+
             <Flex>
                 <Box
                     textStyle={'h2'}
@@ -17,10 +20,10 @@ const ProjectCard = ({ title, description, img, url }) => {
                     px='2'
                     fontSize={'25px'}
                 >
-                    <Text textAlign={'center'}>
+                    <Text mb={'5%'}>
                         {title}
                     </Text>
-                    <Image width='30vw' alt='archimidi screenshot' src='/archimidi.png'></Image>
+                    <Image width='30vw' alt='archimidi screenshot' src={img}></Image>
                 </Box>
 
             </Flex>

@@ -14,7 +14,7 @@ const Projects = () => {
                     textStyle={'h1'}
                     mb='3%'
                 >
-                    Projects
+                    PROJECTS
                 </Box>
                 <Flex
                     justifyContent={'center'}
@@ -28,6 +28,7 @@ const Projects = () => {
                                 title={project.title}
                                 description={project.description}
                                 url={project.url}
+                                img={project.img}
                             />
                         )
                     })}

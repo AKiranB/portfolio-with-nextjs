@@ -20,7 +20,7 @@ const Skills = () => {
                         textStyle={'h1'}
                         mb='3%'
                     >
-                        My Skills
+                        SKILLS
                     </Box>
                     <Flex>
                         {skillsData.map((skill, i) => {
