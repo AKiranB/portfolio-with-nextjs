@@ -1,0 +1,17 @@
+.projectLinks:hover{
+
+    cursor: pointer;
+    
+}
+
+.githubLink:hover{
+
+    color: black;
+
+}
+
+.githubLink{
+    margin-left: 5px;
+    text-decoration: underline;
+    margin-bottom:5px;
+}

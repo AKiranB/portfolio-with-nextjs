@@ -5,6 +5,7 @@ import { Container } from '../components/chakra/Container';
 import { Main } from '../components/chakra/Main'
 import '../components/hero/hero.css'
 import '../components/nav/nav.css'
+import '../components/projects/projectcard.css'
 
 
 function MyApp({ Component, pageProps }) {
