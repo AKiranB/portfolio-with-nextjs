@@ -4,7 +4,7 @@ const BackgroundAnimation = () => (
     <div style={{
         width: '35vw',
         height: '35vh',
-        marginLeft: '40%',
+        marginLeft: '0',
         marginBottom: '50%',
         marginTop: '0',
         zIndex: '0',
@@ -41,7 +41,7 @@ const BackgroundAnimation = () => (
                 transform="translate(-295.027 -193.118)"
                 rx="1.07306"
                 ry="1.07433"
-                fill="#28b463 "
+                fill="#3b3bad "
             >
                 <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
                     <mpath xlinkHref="#path_2" />
@@ -62,7 +62,7 @@ const BackgroundAnimation = () => (
                 transform="translate(-295.027 -193.118)"
                 rx="1.07306"
                 ry="1.07433"
-                fill="#28b463 "
+                fill="#3b3bad "
             >
                 <animateMotion
                     dur="5s"
@@ -93,7 +93,7 @@ const BackgroundAnimation = () => (
                 rx="1.07433"
                 ry="1.07306"
                 transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-                fill="#28b463 "
+                fill="#3b3bad "
             >
                 <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
                     <mpath xlinkHref="#path_0" />
@@ -114,7 +114,7 @@ const BackgroundAnimation = () => (
                 rx="1.07433"
                 ry="1.07306"
                 transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-                fill="#F46737"
+                fill="#3b3bad"
             >
                 <animateMotion
                     dur="10s"
@@ -145,7 +145,7 @@ const BackgroundAnimation = () => (
                 rx="1.07306"
                 ry="1.07433"
                 transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-                fill="#28b463 "
+                fill="#3b3bad "
             >
                 <animateMotion
                     dur="5s"
@@ -176,7 +176,7 @@ const BackgroundAnimation = () => (
                 rx="1.07306"
                 ry="1.07433"
                 transform="translate(-165.524 -93.9596)"
-                fill="#28b463 "
+                fill="#3b3bad "
             >
                 <animateMotion
                     dur="10s"
@@ -207,7 +207,7 @@ const BackgroundAnimation = () => (
                 rx="1.07433"
                 ry="1.07306"
                 transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-                fill="#28b463"
+                fill="#3b3bad"
             >
                 <animateMotion
                     dur="12s"
@@ -285,8 +285,8 @@ const BackgroundAnimation = () => (
                     y2="338.272"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#28b463 " />
-                    <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
+                    <stop stopColor="#3b3bad " />
+                    <stop offset="1" stopColor="#3b3bad" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="paint5_linear"
