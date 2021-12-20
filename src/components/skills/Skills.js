@@ -15,7 +15,7 @@ const Skills = () => {
             <Box maxW='auto' >
                 <Box p='6'>
                     <Center>
-                        <Image boxSize={'20vw'} alt='logo' src='/skills.png' />
+                        <Image boxSize={'20vw'} alt='logo' src='/Skills.png' />
                     </Center>
                     <Flex>
                         {skillsData.map((skill, i) => {

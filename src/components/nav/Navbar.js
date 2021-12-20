@@ -47,11 +47,11 @@ const Navbar = (props) => {
                     fontSize={'30px'}
                 >
                     <NavLinks link='#skills'>
-                        <Image width={'7vw'} alt='me' src='/skills-nav.png' />
+                        <Image width={'7vw'} alt='me' src='/Skills-nav.png' />
                     </NavLinks>
 
                     <NavLinks link='#projects'>
-                        <Image width={'8vw'} alt='me' src='/projects-nav.png' />
+                        <Image width={'8vw'} alt='me' src='/Projects-nav.png' />
                     </NavLinks>
 
 
