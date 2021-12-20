@@ -6,14 +6,12 @@ const SkillCard = ({ title, skillsData, icon }) => {
 
     return (
         <Flex
-            borderWidth='1px'
             borderRadius='lg'
-            borderColor={'grey'}
             m='25px' p='15px'
             direction={'column'}
             justifyContent={'flex-start'}
             alignItems={'center'}
-            bgGradient="linear(to-l,  #63A088 ,  #3342ff )"
+            bgGradient="linear(to-l,  #3b3bad,  #5a4ae3 )"
         >
             <Flex>
                 <Box

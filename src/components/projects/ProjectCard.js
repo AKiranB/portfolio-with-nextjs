@@ -3,14 +3,13 @@ const ProjectCard = ({ title, description, img, url }) => {
 
     return (
         <Flex
-            backgroundColor={'grey'}
-            m='30px' p='30px'
+            m='30px' p='15px'
             direction={'column'}
             justifyContent={'flex-start'}
             alignItems={'center'}
             borderRadius='lg'
             height='500px'
-            bgGradient="linear(to-l,  #63A088 ,  #3342ff )"
+            bgGradient="linear(to-l,  #3b3bad,  #5a4ae3 )"
         >
 
             <Flex>
@@ -20,8 +19,15 @@ const ProjectCard = ({ title, description, img, url }) => {
                     px='2'
                     fontSize={'25px'}
                 >
-                    <Text mb={'5%'}>
-                        {title}
+                    <Text textAlign={'center'} mb={'5%'}>
+                        <Badge
+                            colorScheme={'black'}
+                            fontSize={'xl'}
+                            borderRadius={'5px'}
+                            m={'5px'}
+                        >
+                            {title}
+                        </Badge>
                     </Text>
                     <Image width='30vw' alt='archimidi screenshot' src={img}></Image>
                 </Box>

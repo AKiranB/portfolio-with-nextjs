@@ -1,40 +1,38 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Center, Flex, Image } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectData from "../../constants/projectData";
 
 
 const Projects = () => {
     return (
-        <Flex
-            mt='10%'
+        <Box
+            id='projects'
+            justifyContent={'center'}
+            alignItems={'center'}
+            flexDirection={'row'}
         >
-            <Box p='6'>
-                <Box
-                    textAlign={'center'}
-                    textStyle={'h1'}
-                    mb='3%'
-                >
-                    PROJECTS
-                </Box>
-                <Flex
-                    justifyContent={'center'}
-                    alignItems={'center'}
-                    flexWrap={'wrap'}
-                >
-                    {projectData.map((project, i) => {
-                        return (
-                            <ProjectCard
-                                key={i}
-                                title={project.title}
-                                description={project.description}
-                                url={project.url}
-                                img={project.img}
-                            />
-                        )
-                    })}
-                </Flex>
-            </Box>
-        </Flex>
+            <Center p='0' m='0'>
+                <Image boxSize={'20vw'} alt='logo' src='/projects.png' />
+            </Center>
+            <Flex
+                justifyContent={'center'}
+                alignItems={'center'}
+                flexWrap={'wrap'}
+            >
+                {projectData.map((project, i) => {
+                    return (
+                        <ProjectCard
+                            key={i}
+                            title={project.title}
+                            description={project.description}
+                            url={project.url}
+                            img={project.img}
+                        />
+                    )
+                })}
+            </Flex>
+        </Box>
+
     )
 };
 
