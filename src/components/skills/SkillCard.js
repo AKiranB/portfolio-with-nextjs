@@ -22,7 +22,6 @@ const SkillCard = ({ title, skillsData, icon }) => {
                     px='2'
                     fontSize={'25px'}
 
-
                 >
                     {title}
                 </Box>
