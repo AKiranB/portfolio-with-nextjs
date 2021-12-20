@@ -1,4 +1,7 @@
 import { Box, Badge, Flex, Text, List, ListItem, Heading, Image } from "@chakra-ui/react";
+import Link from "next/link";
+import { LinkIcon } from '@chakra-ui/icons'
+
 const ProjectCard = ({ title, description, img, url }) => {
 
     return (
@@ -8,18 +11,17 @@ const ProjectCard = ({ title, description, img, url }) => {
             justifyContent={'flex-start'}
             alignItems={'center'}
             borderRadius='lg'
-            height='500px'
+            height='450px'
             bgGradient="linear(to-l,  #3b3bad,  #5a4ae3 )"
         >
 
             <Flex>
                 <Box
-                    textStyle={'h2'}
+
                     borderRadius='full'
-                    px='2'
-                    fontSize={'25px'}
+
                 >
-                    <Text textAlign={'center'} mb={'5%'}>
+                    <Text textAlign={'center'} mb={'2%'}>
                         <Badge
                             colorScheme={'black'}
                             fontSize={'xl'}
@@ -28,16 +30,28 @@ const ProjectCard = ({ title, description, img, url }) => {
                         >
                             {title}
                         </Badge>
+                        <br></br>
                     </Text>
-                    <Image width='30vw' alt='archimidi screenshot' src={img}></Image>
+                    <Text className='githubLink'>
+                        <Link passHref href='github.com'>
+                            Github
+                        </Link>
+                        <LinkIcon />
+
+                    </Text>
+                    <Link passHref href='github.com'>
+                        <Image className="projectLinks" borderRadius={'lg'} width='27vw' alt='screenshot of website' src={img} />
+                    </Link>
                 </Box>
 
             </Flex>
-            <Box m='10px' p='10px' w='30vw'>
+            <Box m='10px' p='10px' w='27vw'>
                 <Text>
                     {description}
                 </Text>
+
             </Box>
+
         </Flex>
     )
 };
