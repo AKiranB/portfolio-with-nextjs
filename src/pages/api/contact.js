@@ -1,6 +1,11 @@
-export default function contact(req, res) {
+
+
+
+export default async function contact(req, res) {
+
     require('dotenv').config();
     let nodemailer = require('nodemailer');
+
 
     const transporter = nodemailer.createTransport({
         port: 465,
@@ -21,12 +26,14 @@ export default function contact(req, res) {
         ${req.body.email}</p>`
     };
 
-    let info = transporter.sendMail(mailData, function (err, info) {
-        if (err)
-            console.log(err)
-        else
-            console.log(info)
-    });
+    await new Promise((resolve, reject) => {
+        transporter.sendMail(mailData, (err, info) => {
+            if (err)
+                console.log(err)
+            else
+                console.log(info)
+        });
+    })
 
-    res.send('hello')
+    res.status(200).json({ status: "OK" });
 };

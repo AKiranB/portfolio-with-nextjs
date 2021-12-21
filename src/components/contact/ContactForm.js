@@ -13,14 +13,13 @@ import { useState } from 'react';
 
 const ContactForm = () => {
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-    const [submitted, setSubmitted] = useState(false)
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
 
     const handleSubmit = (e) => {
-
         e.preventDefault();
 
         let data = {
@@ -36,17 +35,16 @@ const ContactForm = () => {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            console.log('Response received')
-            console.log(res.status)
+            if (res.status === 200) {
 
-            console.log('Response succeeded!')
-            setSubmitted(true)
-            setName('')
-            setEmail('')
-            setMessage('')
-
-        })
-    }
+                console.log(res)
+                setSubmitted(true)
+                setName('')
+                setEmail('')
+                setMessage('')
+            }
+        });
+    };
 
     return (
 
@@ -65,7 +63,7 @@ const ContactForm = () => {
                 < Button type='submit'>Submit Message </Button >
             </form >
         </Box>
-    )
+    );
 
 
 };
