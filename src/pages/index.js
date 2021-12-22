@@ -4,6 +4,7 @@ import About from '../components/About'
 import { Flex } from '@chakra-ui/react';
 import Skills from '../components/skills/Skills';
 import Projects from '../components/projects/Projects';
+import ContactForm from '../components/contact/ContactForm';
 
 
 const Index = () => (
@@ -20,6 +21,7 @@ const Index = () => (
       <About />
       <Skills />
       <Projects />
+      <ContactForm />
     </Flex>
 
   </>

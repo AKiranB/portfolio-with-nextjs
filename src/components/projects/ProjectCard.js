@@ -17,9 +17,7 @@ const ProjectCard = ({ title, description, img, url }) => {
 
             <Flex>
                 <Box
-
                     borderRadius='full'
-
                 >
                     <Text textAlign={'center'} mb={'2%'}>
                         <Badge
