@@ -29,8 +29,7 @@ export default async function contact(req, res) {
             else
                 console.log(info)
         })
-
-        return res.status(200).json({ status: "OK" });
     });
+    return res.status(200).json({ status: "OK" });
 
 };
