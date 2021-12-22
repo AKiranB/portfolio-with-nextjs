@@ -36,7 +36,6 @@ const ContactForm = () => {
             body: JSON.stringify(data)
         }).then((res) => {
             if (res.status === 200) {
-
                 console.log(res)
                 setSubmitted(true)
                 setName('')
