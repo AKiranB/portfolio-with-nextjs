@@ -6,6 +6,7 @@ import { Main } from '../components/chakra/Main'
 import '../components/hero/hero.css'
 import '../components/nav/nav.css'
 import '../components/projects/projectcard.css'
+import '../components/contact/contact.css'
 
 
 function MyApp({ Component, pageProps }) {
