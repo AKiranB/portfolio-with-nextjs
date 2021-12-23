@@ -52,6 +52,9 @@ const Navbar = (props) => {
                     <NavLinks link='#projects'>
                         <Image width={'150px'} alt='me' src='/Projects-nav.png' />
                     </NavLinks>
+                    <NavLinks link='#contact'>
+                        <Image width={'140px'} alt='me' src='/Contact-nav.png' />
+                    </NavLinks>
 
 
                 </Stack>

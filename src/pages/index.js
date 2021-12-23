@@ -5,6 +5,7 @@ import { Flex } from '@chakra-ui/react';
 import Skills from '../components/skills/Skills';
 import Projects from '../components/projects/Projects';
 import ContactForm from '../components/contact/ContactForm';
+import Contact from '../components/contact/Contact';
 
 
 const Index = () => (
@@ -21,7 +22,7 @@ const Index = () => (
       <About />
       <Skills />
       <Projects />
-      <ContactForm />
+      <Contact />
     </Flex>
 
   </>
