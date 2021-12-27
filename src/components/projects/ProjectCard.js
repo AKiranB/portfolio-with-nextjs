@@ -13,6 +13,7 @@ const ProjectCard = ({ title, description, img, url }) => {
             borderRadius='lg'
             height='450px'
             bgGradient="linear(to-l,  #3b3bad,  #5a4ae3 )"
+            className="projectCard"
         >
 
             <Flex>
