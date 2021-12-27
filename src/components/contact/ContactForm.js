@@ -8,10 +8,12 @@ import {
     Image,
     Textarea,
     Badge,
-    Flex
+    Flex,
+    Text
 
 } from '@chakra-ui/react'
 import { useState } from 'react';
+import ContactDetailsCard from './ContactDetailsCard';
 
 export default function ContactForm() {
 
@@ -63,8 +65,11 @@ export default function ContactForm() {
     return (
         <>
             <Center id='contact' p='0' m='0'>
-                <Image boxSize={'20vw'} alt='logo' src='/contact.png' />
+                <Image height={'20vw'} width={'20vw'} alt='logo' src='/contact.png' />
             </Center>
+            <ContactDetailsCard />
+
+            <Text mb={'30px'}>Or contact me directly using the form below!</Text>
 
             <Flex
                 direction={'column'}
@@ -72,9 +77,11 @@ export default function ContactForm() {
                 alignItems={'center'}
                 height='auto'
                 opacity={'80%'}
+                p='20px'
+                borderRadius={'lg'}
 
             >
-                <Box marginBottom={'15px'} width={'25vw'} >
+                <Box marginBottom={'15px'} width={'400px'} >
                     < form onSubmit={e => handleSubmit(e)} >
                         <FormControl>
                             < FormLabel htmlFor='name'>Name</FormLabel>
@@ -84,8 +91,9 @@ export default function ContactForm() {
                                 type='text'
                                 name='name'
                                 className='contactInput'
-                                variant={'filled'}
+                                variant={'flushed'}
                                 placeholder='Please enter your name'
+                                colorScheme={'white'}
                             />
                         </FormControl>
                         <FormControl isRequired>
@@ -96,7 +104,7 @@ export default function ContactForm() {
                                 type='email'
                                 name='email'
                                 className='contactInput'
-                                variant={'filled'}
+                                variant={'flushed'}
                                 placeholder='Please enter your email'
                             />
                         </FormControl>
@@ -115,11 +123,10 @@ export default function ContactForm() {
                                 {conformationMessage()}
                             </Center>
                         </FormControl>
-                        <Center margin={'50px'}>
+                        <Center margin={'25px   '}>
                             < Button type='submit'>Send Message </Button >
 
                         </Center>
-
                     </form >
                 </Box>
             </Flex>

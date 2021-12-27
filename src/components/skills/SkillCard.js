@@ -11,14 +11,14 @@ const SkillCard = ({ title, skillsData, icon }) => {
             direction={'column'}
             justifyContent={'flex-start'}
             alignItems={'center'}
-            bgGradient="linear(to-l,  #3b3bad,  #5a4ae3 )"
+            bgGradient="linear(to-l,  #4141cd,  #7000ff )"
         >
             <Flex>
                 <Box
                     textStyle={'h2'}
                     borderRadius='full'
                     px='2'
-                    fontSize={'25px'}
+                    fontSize={['sm', 'md', 'lg', '25px']}
 
                 >
                     {title}

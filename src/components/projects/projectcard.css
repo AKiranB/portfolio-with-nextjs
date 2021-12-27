@@ -7,11 +7,18 @@
 .githubLink:hover{
 
     color: black;
+    cursor:pointer;
+    text-decoration: 'underline';
 
 }
 
 .githubLink{
     margin-left: 5px;
-    text-decoration: underline;
     margin-bottom:5px;
+    color:'black'
+}
+
+.projectCard{
+    background: conic-gradient(from 180deg at 50% 50%, #0066FF 0deg, #7000FF 360deg);
+
 }
