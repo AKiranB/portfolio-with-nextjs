@@ -12,7 +12,6 @@ import {
 
 } from '@chakra-ui/react'
 import { useState } from 'react';
-import ContactDetailsCard from './ContactDetailsCard';
 
 export default function ContactForm() {
 
@@ -63,23 +62,19 @@ export default function ContactForm() {
     };
     return (
         <>
-            <Center p='0' m='0'>
+            <Center id='contact' p='0' m='0'>
                 <Image boxSize={'20vw'} alt='logo' src='/contact.png' />
             </Center>
 
             <Flex
-                p='50px'
                 direction={'column'}
                 justifyContent={'flex-start'}
                 alignItems={'center'}
-                borderRadius='lg'
-                borderWidth={'1px'}
                 height='auto'
                 opacity={'80%'}
+
             >
-                <ContactDetailsCard />
-                {conformationMessage()}
-                <Box marginBottom={'15px'} marginTop={'30px'} width={'25vw'} >
+                <Box marginBottom={'15px'} width={'25vw'} >
                     < form onSubmit={e => handleSubmit(e)} >
                         <FormControl>
                             < FormLabel htmlFor='name'>Name</FormLabel>
@@ -116,10 +111,15 @@ export default function ContactForm() {
                                 variant={'filled'}
                                 placeholder='Please enter your message'
                             />
+                            <Center>
+                                {conformationMessage()}
+                            </Center>
                         </FormControl>
-                        <Center>
-                            < Button type='submit'>Submit Message </Button >
+                        <Center margin={'50px'}>
+                            < Button type='submit'>Send Message </Button >
+
                         </Center>
+
                     </form >
                 </Box>
             </Flex>
