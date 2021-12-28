@@ -1,5 +1,5 @@
 import { Badge, Box, Center, color, Flex, Stack, Text, Image } from '@chakra-ui/react'
-import { Link } from '@chakra-ui/react';
+import Link from 'next/link';
 
 
 const ContactDetailsCard = () => {
@@ -24,10 +24,10 @@ const ContactDetailsCard = () => {
                     <Badge borderRadius={'5px'} colorScheme={'black'} style={style}>{'anthony.kiran.boyle@gmail.com'.toLowerCase()}</Badge>
                     <Badge borderRadius={'5px'} colorScheme={'black'} style={style}>+49 151 75625321</Badge>
                     <Flex direction={'row'}>
-                        <Link style={style} href='www.github.com'>
+                        <Link passHref style={style} href='www.github.com'>
                             <Image alt='github icon' src='/github.png'></Image>
                         </Link>
-                        <Link style={style} href='www.linkedin.com'>
+                        <Link passHref style={style} href='www.linkedin.com'>
                             <Image ml={'10px'} mt={'5px'} width={'100px'} height={'25px'} alt='github icon' src='/linkedin.png'></Image>
                         </Link>
                     </Flex>

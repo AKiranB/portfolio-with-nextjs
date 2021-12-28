@@ -10,8 +10,8 @@ const About = () => {
             alignItems="center"
             width='70%'
             mb={'0'}
-            mt={'5%'}>
-            <Box maxW='70vh' fontSize={['sm', 'md', 'lg']}>
+            mt={'10%'}>
+            <Box mb={'10%'} maxW='70vh' fontSize={['sm', 'md', 'lg']}>
 
                 <br />
                 I have over 7 years professional experience as a sound designer, audio engineer, and post-production engineer, working on documentaries, for startups and in events. I have recently completed Ironhack’s

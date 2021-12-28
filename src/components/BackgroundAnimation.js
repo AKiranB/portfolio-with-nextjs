@@ -5,7 +5,7 @@ const BackgroundAnimation = () => (
         width: '35vw',
         height: '35vh',
         marginLeft: '0',
-        marginBottom: '50%',
+        marginBottom: '90% ',
         marginTop: '0',
         zIndex: '0',
         position: 'absolute'

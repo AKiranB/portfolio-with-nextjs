@@ -1,3 +1,4 @@
+
 .projectLinks:hover{
 
     cursor: pointer;
@@ -13,9 +14,21 @@
 }
 
 .githubLink{
-    margin-left: 5px;
-    margin-bottom:5px;
+    margin-left: 10px;
     color:'black'
+}
+
+.deploymentLink{
+    margin-left: 10px;
+    margin-top: 3px;
+    color:'black'
+}
+
+.deploymentLink:hover{
+   
+    color: black;
+    cursor:pointer;
+    text-decoration: 'underline';
 }
 
 .projectCard{
