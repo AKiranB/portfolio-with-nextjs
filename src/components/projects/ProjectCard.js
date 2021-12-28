@@ -1,6 +1,6 @@
 import { Box, Badge, Flex, Text, List, ListItem, Heading, Image, Stack } from "@chakra-ui/react";
 import Link from "next/link";
-import { ViewIcon } from '@chakra-ui/icons'
+
 
 const ProjectCard = ({ title, description, img, url }) => {
 
@@ -16,13 +16,9 @@ const ProjectCard = ({ title, description, img, url }) => {
             height={'auto'}
 
         >
-
-
-            <Link passHref href='github.com'>
+            <Link passHref href='https://www.github.com'>
                 <Image className="projectLinks" width={'27.5vw'} height='100%' alt='screenshot of website' src={img} />
             </Link>
-
-
             <Flex justifyContent={'flex-start'} m={'20px'} alignItems={'flex-start'} direction={'column'} w={['30vw', '23vw']}>
                 <Text mb={'2%'}>
                     <Badge
@@ -37,13 +33,15 @@ const ProjectCard = ({ title, description, img, url }) => {
                 <Text fontSize={['sm', 'md']}>
                     {description}
                 </Text>
-                <Stack direction={'row'} marginTop={'30px'}>
-                    <Link passHref href='github.com'>
+                <Stack direction={'row'} marginTop={'35px'}>
+                    <Link marginTop='20px' passHref href='https://www.github.com'>
                         <Image className='githubLink' mr={'20px'} alt="github" src="/github.png"></Image>
                     </Link>
-                    <Link textDocoration="none" passHref href='github.com'>
-                        <Text className='githubLink' fontSize={['sm', 'md', 'lg']}>View <ViewIcon /></Text>
-                    </Link>
+                    <Box>
+                        <Link textDecoration="none" passHref href='https://www.github.com'>
+                            <Text className='deploymentLink' fontSize={'lg'}>View</Text>
+                        </Link>
+                    </Box>
                 </Stack>
 
             </Flex>
