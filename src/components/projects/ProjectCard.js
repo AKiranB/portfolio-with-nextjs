@@ -1,8 +1,15 @@
-import { Box, Badge, Flex, Text, List, ListItem, Heading, Image, Stack } from "@chakra-ui/react";
+import {
+    Box,
+    Badge,
+    Flex,
+    Text,
+    Image,
+    Stack
+} from "@chakra-ui/react";
 import Link from "next/link";
 
 
-const ProjectCard = ({ title, description, img, url }) => {
+const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
     return (
         <Flex
@@ -17,16 +24,25 @@ const ProjectCard = ({ title, description, img, url }) => {
 
         >
             <Link passHref href='https://www.github.com'>
-                <Image className="projectLinks" width={'27.5vw'} height='100%' alt='screenshot of website' src={img} />
+                <Image
+                    className="projectLinks"
+                    width={'27.5vw'}
+                    height='100%'
+                    alt='screenshot of website'
+                    src={img} />
             </Link>
-            <Flex justifyContent={'flex-start'} m={'20px'} alignItems={'flex-start'} direction={'column'} w={['30vw', '23vw']}>
-                <Text mb={'2%'}>
+            <Flex
+                justifyContent={'flex-start'}
+                m={'20px'} alignItems={'flex-start'}
+                direction={'column'}
+                w={['30vw', '23vw']}>
+                <Text mb={'5%'}>
                     <Badge
                         colorScheme={'white'}
                         fontSize={['sm', 'md', 'lg', 'xl']}
-                        borderRadius={'5px'}
                     >
                         {title}
+                        <hr></hr>
                     </Badge>
                     <br></br>
                 </Text>
@@ -34,12 +50,25 @@ const ProjectCard = ({ title, description, img, url }) => {
                     {description}
                 </Text>
                 <Stack direction={'row'} marginTop={'35px'}>
-                    <Link marginTop='20px' passHref href='https://www.github.com'>
-                        <Image className='githubLink' mr={'20px'} alt="github" src="/github.png"></Image>
+                    <Link
+                        passHref
+                        href={githubUrl}>
+                        <Image
+                            className='githubLink'
+                            mr={'20px'} alt="github"
+                            src="/github.png">
+                        </Image>
                     </Link>
                     <Box>
-                        <Link textDecoration="none" passHref href='https://www.github.com'>
-                            <Text className='deploymentLink' fontSize={'lg'}>View</Text>
+                        <Link
+                            textDecoration="none"
+                            passHref
+                            href={appUrl}>
+                            <Text
+                                className='deploymentLink'
+                                fontSize={'lg'}>
+                                View
+                            </Text>
                         </Link>
                     </Box>
                 </Stack>

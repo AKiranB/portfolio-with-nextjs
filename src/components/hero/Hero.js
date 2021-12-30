@@ -1,4 +1,4 @@
-import { Flex, Heading, Image } from '@chakra-ui/react'
+import { Flex, Image } from '@chakra-ui/react'
 export const Hero = ({ title }) => (
 
   <div className='wrapper'>

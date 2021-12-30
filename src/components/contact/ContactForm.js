@@ -22,13 +22,12 @@ export default function ContactForm() {
     const [message, setMessage] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubmitted(true)
-        setName('')
-        setEmail('')
-        setMessage('')
+        setSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
 
         let data = {
             name,
@@ -65,11 +64,15 @@ export default function ContactForm() {
     return (
         <>
             <Center id='contact' p='0' m='0'>
-                <Image height={'20vw'} width={'20vw'} alt='logo' src='/contact.png' />
+                <Image
+                    height={'20vw'}
+                    width={'20vw'}
+                    alt='logo'
+                    src='/contact.png' />
             </Center>
             <ContactDetailsCard />
 
-            <Text mb={'30px'}>Or contact me directly using the form below!</Text>
+            <Text mb={'50px'}>Or contact me directly using the form below!</Text>
 
             <Flex
                 direction={'column'}
@@ -132,8 +135,6 @@ export default function ContactForm() {
             </Flex>
         </>
     );
-
-
 };
 
 
