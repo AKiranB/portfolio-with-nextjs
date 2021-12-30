@@ -22,14 +22,10 @@ export default async function contact(req, res) {
         ${req.body.email}</p>`
     };
 
-    await new Promise((resolve, reject) => {
-        transporter.sendMail(mailData, (err, info) => {
-            if (err)
-                console.log(err)
-            else
-                console.log(info)
-        })
-    });
+
+    await transporter.sendMail(mailData)
+
+
     return res.status(200).json({ status: "OK" });
 
 };
