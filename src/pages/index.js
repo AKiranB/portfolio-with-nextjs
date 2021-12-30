@@ -24,8 +24,7 @@ const Index = () => (
       <Projects />
       <Contact />
     </Flex>
-
   </>
-)
+);
 
 export default Index;

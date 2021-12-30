@@ -1,4 +1,9 @@
-import { Box, Center, Flex, Image } from "@chakra-ui/react";
+import {
+    Box,
+    Center,
+    Flex,
+    Image
+} from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectData from "../../constants/projectData";
 
@@ -25,7 +30,8 @@ const Projects = () => {
                             key={i}
                             title={project.title}
                             description={project.description}
-                            url={project.url}
+                            appUrl={project.appUrl}
+                            githubUrl={project.githubUrl}
                             img={project.img}
                         />
                     )

@@ -29,7 +29,10 @@ const Navbar = (props) => {
         >
             <>
                 <NavLinks link='/'>
-                    <Image width={'120px'} alt='me' src='/kiranboyle.png' />
+                    <Image
+                        width={'120px'}
+                        alt='me'
+                        src='/kiranboyle.png' />
                 </NavLinks>
                 <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
                     <HamburgerIcon />
@@ -46,14 +49,23 @@ const Navbar = (props) => {
                     fontSize={'30px'}
                 >
                     <NavLinks link='#skills'>
-                        <Image width={'120px'} alt='me' src='/Skills-nav.png' />
+                        <Image
+                            width={'120px'}
+                            alt='me'
+                            src='/Skills-nav.png' />
                     </NavLinks>
 
                     <NavLinks link='#projects'>
-                        <Image width={'150px'} alt='me' src='/Projects-nav.png' />
+                        <Image
+                            width={'150px'}
+                            alt='me'
+                            src='/Projects-nav.png' />
                     </NavLinks>
                     <NavLinks link='#contact'>
-                        <Image width={'140px'} alt='me' src='/Contact-nav.png' />
+                        <Image
+                            width={'140px'}
+                            alt='me'
+                            src='/Contact-nav.png' />
                     </NavLinks>
 
 

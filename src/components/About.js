@@ -1,7 +1,4 @@
-import { StarIcon } from "@chakra-ui/icons";
-import { Box, Badge, Flex, Image, Img, Heading, Center } from "@chakra-ui/react";
-import ContactDetailsCard from '../components/contact/ContactDetailsCard'
-
+import { Box, Flex } from "@chakra-ui/react";
 
 const About = () => {
     return (

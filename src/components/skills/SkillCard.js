@@ -1,4 +1,4 @@
-import { Box, Badge, Flex, Text, List, ListItem, Heading } from "@chakra-ui/react";
+import { Box, Badge, Flex, Text, List, ListItem } from "@chakra-ui/react";
 
 
 
@@ -19,7 +19,6 @@ const SkillCard = ({ title, skillsData, icon }) => {
                     borderRadius='full'
                     px='2'
                     fontSize={['sm', 'md', 'lg', '25px']}
-
                 >
                     {title}
                 </Box>
