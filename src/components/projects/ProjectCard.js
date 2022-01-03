@@ -4,7 +4,9 @@ import {
     Flex,
     Text,
     Image,
-    Stack
+    Stack,
+    Button,
+    Heading
 } from "@chakra-ui/react";
 import Link from "next/link";
 
@@ -13,62 +15,64 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
     return (
         <Flex
-            m='15px'
+            m='40px'
             direction={'row'}
             justifyContent={'flex-start'}
             alignItems={'center'}
             className="projectCard"
-            borderRadius={'lg'}
             width={'auto'}
             height={'auto'}
+            boxShadow={'rgba(63, 98, 235, 0.4) -5px 5px, rgba(63, 98, 235, 0.3) -10px 10px, rgba(63, 98, 235, 0.2) -15px 15px, rgba(63, 98, 235, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'}
 
         >
-            <Link passHref href='https://www.github.com'>
+            <Link height='100%' passHref href='https://www.github.com'>
                 <Image
                     className="projectLinks"
-                    width={'27.5vw'}
+                    width={'50%'}
                     height='100%'
                     alt='screenshot of website'
                     src={img} />
             </Link>
             <Flex
                 justifyContent={'flex-start'}
-                m={'20px'} alignItems={'flex-start'}
+                ml={'20px'} mr={'20px'} alignItems={'flex-start'}
                 direction={'column'}
-                w={['30vw', '23vw']}>
-                <Text mb={'5%'}>
-                    <Badge
-                        colorScheme={'white'}
-                        fontSize={['sm', 'md', 'lg', 'xl']}
+            >
+                <Text >
+                    <Heading
+
                     >
                         {title}
                         <hr></hr>
-                    </Badge>
+                    </Heading>
+                    <br></br>
                     <br></br>
                 </Text>
-                <Text fontSize={['sm', 'md']}>
+                <Text fontSize={['sm', 'md', 'xl']}>
                     {description}
                 </Text>
-                <Stack direction={'row'} marginTop={'35px'}>
+                <Stack mt={'30px'} direction={'row'}>
                     <Link
                         passHref
                         href={githubUrl}>
-                        <Image
+                        <Button
                             className='githubLink'
                             mr={'20px'} alt="github"
-                            src="/github.png">
-                        </Image>
+                            src="/github.png"
+                            fontSize={['sm', 'md', 'xl']}>
+                            Github
+                        </Button>
                     </Link>
                     <Box>
                         <Link
                             textDecoration="none"
                             passHref
                             href={appUrl}>
-                            <Text
+                            <Button
                                 className='deploymentLink'
-                                fontSize={'lg'}>
+                                fontSize={['sm', 'md', 'xl']}>
                                 View
-                            </Text>
+                            </Button>
                         </Link>
                     </Box>
                 </Stack>

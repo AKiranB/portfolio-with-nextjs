@@ -1,12 +1,15 @@
 import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 
-const fonts = { mono: `monospace` }
+const fonts = {
+  heading: 'Raleway',
+  body: 'Raleway'
+}
 
 const breakpoints = createBreakpoints({
-  sm: '40em',
-  md: '52em',
-  lg: '64em',
+  sm: '50em',
+  md: '60em',
+  lg: '70em',
   xl: '80em',
 })
 
@@ -18,14 +21,14 @@ const theme = extendTheme({
   breakpoints,
   textStyles: {
     h1: {
-      fontSize: '35px',
+      fontSize: '100px',
       lineHeight: '110%',
       letterSpacing: '-2%',
       fonts: fonts
 
     },
     h2: {
-      fontSize: '35px',
+      fontSize: '100px',
       lineHeight: '110%',
       letterSpacing: '-2%',
 
