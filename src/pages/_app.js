@@ -17,6 +17,7 @@ function MyApp({ Component, pageProps }) {
           useSystemColorMode: true,
         }}
       >
+
         <Navbar />
         <Container height="auto" >
           <Main>
