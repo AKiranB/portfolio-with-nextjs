@@ -25,14 +25,14 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
             boxShadow={'rgba(63, 98, 235, 0.4) -5px 5px, rgba(63, 98, 235, 0.3) -10px 10px, rgba(63, 98, 235, 0.2) -15px 15px, rgba(63, 98, 235, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'}
 
         >
-            <Link height='100%' passHref href='https://www.github.com'>
-                <Image
-                    className="projectLinks"
-                    width={'50%'}
-                    height='100%'
-                    alt='screenshot of website'
-                    src={img} />
-            </Link>
+
+            <Image
+                className="projectLinks"
+                width={'50vw'}
+                height='100%'
+                alt='screenshot of website'
+                src={img} />
+
             <Flex
                 justifyContent={'flex-start'}
                 ml={'20px'} mr={'20px'} alignItems={'flex-start'}
