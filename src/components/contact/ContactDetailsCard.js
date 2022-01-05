@@ -5,7 +5,6 @@ import {
     Flex,
     Image
 } from '@chakra-ui/react'
-import Link from 'next/link';
 
 const ContactDetailsCard = () => {
 
@@ -25,18 +24,15 @@ const ContactDetailsCard = () => {
             <Center>
                 <Flex direction={'column'}>
                     <Badge
-                        borderRadius={'5px'}
-                        colorScheme={'black'}
                         style={style}>{'anthony.kiran.boyle@gmail.com'.toLowerCase()}</Badge>
                     <Badge
-                        borderRadius={'5px'}
-                        colorScheme={'black'}
+
                         style={style}>+49 151 75625321</Badge>
                     <Flex direction={'row'}>
-                        <Link passHref style={style} href='www.github.com'>
+                        <a href='https://www.github.com/AkiranB'>
                             <Image alt='github icon' src='/github.png'></Image>
-                        </Link>
-                        <Link passHref style={style} href='www.linkedin.com'>
+                        </a>
+                        <a style={style} href='https://www.linkedin.com/in/kiran-boyle/'>
                             <Image
                                 ml={'10px'}
                                 mt={'5px'}
@@ -44,7 +40,7 @@ const ContactDetailsCard = () => {
                                 height={'25px'}
                                 alt='github icon'
                                 src='/linkedin.png'></Image>
-                        </Link>
+                        </a>
                     </Flex>
                 </Flex>
             </Center>

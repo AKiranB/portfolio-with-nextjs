@@ -37,7 +37,8 @@ import { GiGearStickPattern } from 'react-icons/gi'
 // ];
 
 
-const skillsData = [
+export const skillsDataLeft = [
+    'Typescript',
     'React',
     'Next',
     'Chakra UI',
@@ -45,20 +46,22 @@ const skillsData = [
     'Material UI',
     'CSS3',
     'Bootstrap',
-    'Git',
-    'GitHub',
+
+    'Bcrypt',
+
+];
+export const skillsDataRight = [
+    'JavaScript',
     'Express',
     'MongoDB',
     'Node',
     'GraphQL',
-    'Typescript',
-    'JavaScript',
     "RESTful API's",
     'Axios',
-    'Jest',
     'NPM',
-    'Bcrypt',
-];
+    'GitHub',
+
+]
 
 
-export default skillsData;
+

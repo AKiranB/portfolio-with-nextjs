@@ -9,6 +9,7 @@ import '../components/projects/projectcard.css'
 import '../components/contact/contact.css'
 import '@fontsource/raleway/400.css'
 import '@fontsource/open-sans/700.css'
+import './index.css'
 
 
 function MyApp({ Component, pageProps }) {
@@ -19,7 +20,6 @@ function MyApp({ Component, pageProps }) {
           useSystemColorMode: true,
         }}
       >
-
         <Navbar />
         <Container height="auto" >
           <Main>

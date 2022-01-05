@@ -28,7 +28,7 @@ const Navbar = (props) => {
             {...props}
         >
             <>
-                <NavLinks link='/'>
+                <NavLinks link='#about'>
                     <Image
                         width={'120px'}
                         alt='me'
@@ -48,13 +48,6 @@ const Navbar = (props) => {
                     pr={'15px'}
                     fontSize={'30px'}
                 >
-                    <NavLinks link='#skills'>
-                        <Image
-                            width={'120px'}
-                            alt='me'
-                            src='/Skills-nav.png' />
-                    </NavLinks>
-
                     <NavLinks link='#projects'>
                         <Image
                             width={'150px'}
@@ -67,8 +60,6 @@ const Navbar = (props) => {
                             alt='me'
                             src='/Contact-nav.png' />
                     </NavLinks>
-
-
                 </Stack>
                 <Box
                     display={{ base: isOpen ? "block" : "none", md: "block" }}

@@ -11,6 +11,7 @@ import projectData from "../../constants/projectData";
 const Projects = () => {
     return (
         <Box
+            mt={'200px'}
             id='projects'
             justifyContent={'center'}
             alignItems={'center'}
