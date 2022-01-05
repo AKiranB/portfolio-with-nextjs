@@ -7,16 +7,19 @@ import '../components/hero/hero.css'
 import '../components/nav/nav.css'
 import '../components/projects/projectcard.css'
 import '../components/contact/contact.css'
+import '@fontsource/raleway/400.css'
+import '@fontsource/open-sans/700.css'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider resetCSS theme={theme}>
+    <ChakraProvider theme={theme}>
       <ColorModeProvider
         options={{
           useSystemColorMode: true,
         }}
       >
+
         <Navbar />
         <Container height="auto" >
           <Main>

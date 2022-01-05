@@ -1,35 +1,5 @@
 
-.projectLinks:hover{
 
-    cursor: pointer;
-    
-}
-
-.githubLink:hover{
-
-    color: black;
-    cursor:pointer;
-    text-decoration: 'underline';
-
-}
-
-.githubLink{
-    margin-left: 10px;
-    color:'black'
-}
-
-.deploymentLink{
-    margin-left: 10px;
-    margin-top: 3px;
-    color:'black'
-}
-
-.deploymentLink:hover{
-   
-    color: black;
-    cursor:pointer;
-    text-decoration: 'underline';
-}
 
 .projectCard{
     background: conic-gradient(from 180deg at 50% 50%, #0066FF 0deg, #7000FF 360deg);

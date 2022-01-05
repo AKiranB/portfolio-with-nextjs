@@ -4,6 +4,9 @@ module.exports = {
         '!**/*.d.ts',
         '!**/node_modules/**',
     ],
+    transform: {
+        "^.+\\.(js|jsx|ts|tsx)$": ["babel-jest", { presets: ["next/babel"] }],
+    },
     moduleNameMapper: {
         // Handle CSS imports (with CSS modules)
         // https://jestjs.io/docs/webpack#mocking-css-modules

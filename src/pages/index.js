@@ -6,10 +6,13 @@ import Skills from '../components/skills/Skills';
 import Projects from '../components/projects/Projects';
 import ContactForm from '../components/contact/ContactForm';
 import Contact from '../components/contact/Contact';
+import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
+import theme from '../theme';
 
 
 const Index = () => (
   <>
+
     <Flex
       direction={'column'}
       align={'center'}
