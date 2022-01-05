@@ -15,9 +15,7 @@ describe('hero', () => {
 
     expect(screen.queryByTestId('title')).toHaveTextContent('Hey there! My name is Kiran')
     // expect(screen.getByRole('button')).toBeDisabled()
-
-
-  })
+  });
 
   xtest('handles server error', async () => {
     server.use(
@@ -35,4 +33,4 @@ describe('hero', () => {
     expect(screen.getByRole('alert')).toHaveTextContent('Oops, failed to fetch!')
     expect(screen.getByRole('button')).not.toBeDisabled()
   })
-})
+});

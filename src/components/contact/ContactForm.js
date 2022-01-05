@@ -14,9 +14,9 @@ import {
 } from '@chakra-ui/react'
 import { useState } from 'react';
 import ContactDetailsCard from './ContactDetailsCard';
+import boxShadow from '../../constants/boxShadow';
 
 export default function ContactForm() {
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -48,7 +48,6 @@ export default function ContactForm() {
             }
         });
     };
-
     const conformationMessage = () => {
         if (submitted) {
             return (
@@ -71,19 +70,14 @@ export default function ContactForm() {
                     src='/contact.png' />
             </Center>
             <ContactDetailsCard />
-
             <Text mb={'50px'}>Or contact me directly using the form below!</Text>
-
             <Flex
-                direction={'column'}
-                justifyContent={'flex-start'}
                 alignItems={'center'}
                 height='auto'
-                opacity={'80%'}
                 p='50px'
                 mb={'50px'}
                 borderWidth={'1px'}
-                boxShadow={'rgba(63, 98, 235, 0.4) -5px 5px, rgba(63, 98, 235, 0.3) -10px 10px, rgba(63, 98, 235, 0.2) -15px 15px, rgba(63, 98, 235, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'}
+                boxShadow={boxShadow}
 
             >
                 <Box marginBottom={'15px'} width={'400px'} >
