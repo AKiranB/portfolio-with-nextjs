@@ -1,8 +1,8 @@
-import { Box, Badge, Flex, Text, List, ListItem } from "@chakra-ui/react";
+import { Box, Badge, Flex, Text, List, ListItem, Heading } from "@chakra-ui/react";
 
 
 
-const SkillCard = ({ title, skillsData, icon }) => {
+const SkillCard = ({ skillsData }) => {
 
     return (
         <Flex
@@ -12,8 +12,9 @@ const SkillCard = ({ title, skillsData, icon }) => {
             justifyContent={'flex-start'}
             alignItems={'center'}
             bgGradient="linear(to-l,  #4141cd,  #7000ff )"
+            boxShadow={'rgba(63, 98, 235, 0.4) -5px 5px, rgba(63, 98, 235, 0.3) -10px 10px, rgba(63, 98, 235, 0.2) -15px 15px, rgba(63, 98, 235, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'}
         >
-            <Flex>
+            {/* <Flex>
                 <Box
                     textStyle={'h2'}
                     borderRadius='full'
@@ -24,7 +25,7 @@ const SkillCard = ({ title, skillsData, icon }) => {
                 </Box>
                 {icon}
 
-            </Flex>
+            </Flex> */}
             <Box m='10px' p='10px' w='15vw'>
                 <Text textAlign={'center'}>
                     <List>

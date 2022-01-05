@@ -5,33 +5,34 @@ import skillsData from "../../constants/skillsData";
 
 const Skills = () => {
     return (
-        <Flex
-            id='skills'
-            direction={'column'}
-            justifyContent="center"
-            alignItems="center"
-            width='auto'
-        >
-            <Box maxW='auto' >
-                <Box p='6'>
-                    <Center>
-                        <Image boxSize={'20vw'} alt='logo' src='/Skills.png' />
-                    </Center>
-                    <Flex>
-                        {skillsData.map((skill, i) => {
-                            return (
-                                <SkillCard
-                                    title={skill.title}
-                                    skillsData={skill.skills}
-                                    icon={skill.icon}
-                                    key={i}
-                                />
-                            )
-                        })}
-                    </Flex>
-                </Box>
-            </Box>
-        </Flex>
+        // <Flex
+        //     id='skills'
+        //     direction={'column'}
+        //     justifyContent="center"
+        //     alignItems="center"
+        //     width='auto'
+        // >
+        //     <Box maxW='auto' >
+        //         <Box p='6'>
+        //             <Center>
+        //                 <Image boxSize={'20vw'} alt='logo' src='/Skills.png' />
+        //             </Center>
+        //             <Flex>
+        //                 {skillsData.map((skill, i) => {
+        //                     return (
+        //                         <SkillCard
+        //                             title={skill.title}
+        //                             skillsData={skill.skills}
+        //                             icon={skill.icon}
+        //                             key={i}
+        //                         />
+        //                     )
+        //                 })}
+        //             </Flex>
+        //         </Box>
+        //     </Box>
+        // </Flex>
+        null
     )
 };
 
