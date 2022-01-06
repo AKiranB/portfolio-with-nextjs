@@ -13,45 +13,41 @@ const About = () => {
             mb={'0'}
             mt={'10%'}
             boxShadow={boxShadow}
-            id="about"
+            height={'auto'}
         >
             <Flex mb={'40px'} pl={'30px'} flexDirection={'column'}>
                 <Heading fontSize={['sm', 'xl']}> About me</Heading>
                 <Box padding={0} fontSize={['sm', 'md', 'lg']}>
                     <br />
-                    I am an enthusiastic, self-driven learner and sharer of knowledge, who enjoys the challenges of problem-solving, both individually and in a team.
-                    Having recently completed a Fullstack web development Bootcamp where I built a solid foundation in Javascript, front-end frameworks like React and Next as well as Node and Express, I am excited at the opportunity to continue learning and expanding my skillset alongside a fantastic group of people!
+                    I am an enthusiastic, self-driven learner and sharer and consumer of knowledge, who enjoys the challenges of problem-solving both individually and in a team.
+                    I've recently completed a Fullstack web development Bootcamp during which I built a solid foundation in Javascript(ES6+), HTML5 and CSS3, front-end frameworks like React, Node and Express. I've since expanded my skills through building new <a href="#projects"><u>projects</u> </a>and expanding upon old ones, and I'm excited at the opportunity to continue this journey alongside a fantastic group of people!
+                    <br />
+
                     <br />
                     <br />
-                    I am excited at the opportunity to continue learning and expanding my skillset alongside a fantastic group of people!
-                    <br />
-                    <br />
-                    In my free time, I am a callisthenics fanatic and avid producer and sound designer.
+                    In my free time, I am a callisthenics fanatic, avid music producer, sound designer and synthesizer enthusiast with a particular interest in modular synthesis.
                 </Box>
             </Flex>
             <Flex
                 borderRadius='lg'
                 m='25px' p='15px'
-                width={'80%'}
+                width={'100%'}
                 direction={'column'}
                 justifyContent={'flex-start'}
                 alignItems={'center'}
                 bgGradient="linear(to-l,  #4141cd,  #7000ff )"
             >
-                <Heading mb={'30px'} fontSize={['sm', 'xl']}> Skills </Heading>
+                <Heading mb={'10px'} fontSize={['sm', 'xl']}> Skills </Heading>
                 <Flex
                     justifyContent="center"
                     alignItems="center"
-                    flexDirection={'row'}
-                >
-                    <Wrap
-                        display={'flex'}
-                    >
+                    flexDirection={'row'}>
+                    <Wrap display={'flex'}>
                         <Box>
                             {skillsDataLeft.map((skill, i) => {
                                 return (
                                     <WrapItem pt={'5px'} key={i}>
-                                        <Badge fontSize={['sm', 'md']}>
+                                        <Badge borderRadius={'3px'} fontSize={['sm', 'md']}>
                                             {skill}
                                         </Badge>
                                     </WrapItem>
@@ -59,12 +55,11 @@ const About = () => {
                             })
                             }
                         </Box>
-
                         <Box>
                             {skillsDataRight.map((skill, i) => {
                                 return (
                                     <WrapItem pt={'5px'} key={i}>
-                                        <Badge fontSize={['sm', 'md']}>
+                                        <Badge borderRadius={'3px'} fontSize={['sm', 'md']}>
                                             {skill}
                                         </Badge>
                                     </WrapItem>

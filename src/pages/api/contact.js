@@ -23,8 +23,7 @@ export default async function contact(req, res) {
     };
 
 
-    await transporter.sendMail(mailData)
-
+    await transporter.sendMail(mailData);
 
     return res.status(200).json({ status: "OK" });
 
