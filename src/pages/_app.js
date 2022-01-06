@@ -29,6 +29,6 @@ function MyApp({ Component, pageProps }) {
       </ColorModeProvider>
     </ChakraProvider>
   )
-}
+};
 
 export default MyApp

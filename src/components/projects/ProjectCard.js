@@ -9,6 +9,7 @@ import {
     Heading
 } from "@chakra-ui/react";
 import Link from "next/link";
+import boxShadow from '../../constants/boxShadow'
 
 
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
@@ -22,10 +23,8 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
             className="projectCard"
             width={'auto'}
             height={'auto'}
-            boxShadow={'rgba(63, 98, 235, 0.4) -5px 5px, rgba(63, 98, 235, 0.3) -10px 10px, rgba(63, 98, 235, 0.2) -15px 15px, rgba(63, 98, 235, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'}
-
+            boxShadow={boxShadow}
         >
-
             <Image
                 className="projectLinks"
                 width={'50vw'}
@@ -40,7 +39,6 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
             >
                 <Text >
                     <Heading
-
                     >
                         {title}
                         <hr></hr>

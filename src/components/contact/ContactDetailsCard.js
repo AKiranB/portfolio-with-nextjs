@@ -24,18 +24,17 @@ const ContactDetailsCard = () => {
             <Center>
                 <Flex direction={'column'}>
                     <Badge
-                        style={style}>{'anthony.kiran.boyle@gmail.com'.toLowerCase()}</Badge>
+                        style={style}>{'anthony.kiran.boyle@gmail.com'}</Badge>
                     <Badge
-
+                        data-testid='number'
                         style={style}>+49 151 75625321</Badge>
-                    <Flex direction={'row'}>
+                    <Flex mt='20px' ml={'5px'} direction={'row'}>
                         <a href='https://www.github.com/AkiranB'>
                             <Image alt='github icon' src='/github.png'></Image>
                         </a>
                         <a style={style} href='https://www.linkedin.com/in/kiran-boyle/'>
                             <Image
                                 ml={'10px'}
-                                mt={'5px'}
                                 width={'100px'}
                                 height={'25px'}
                                 alt='github icon'
