@@ -2,7 +2,7 @@ const projectData = [
     {
         title: 'ArchiMidi',
         img: '/archimidi.png',
-        description: "ArchiMidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview midi files. ArchiMidi utilizes Cloudinary for file storage and Material UI as the component library as well as using the HTML-midi-player library powered by Magenta.js to preview HTML in the browser. ArchiMidi is the final project for Ironhack's web development Bootcamp. ",
+        description: "ArchiMidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview MIDI files. ArchiMidi utilizes Cloudinary for file storage and Material UI as the component library as well as using the HTML-midi-player library powered by Magenta.js to preview MIDI in the browser. ArchiMidi is the final project for Ironhack's web development Bootcamp. ",
         appUrl: 'https://archimidiv2.herokuapp.com/',
         githubUrl: 'https://www.github.com/AKiranB/Archimidi-v2'
     },
