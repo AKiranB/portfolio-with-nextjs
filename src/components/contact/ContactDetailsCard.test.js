@@ -4,7 +4,6 @@ import ContactDetailsCard from './ContactDetailsCard'
 import { ChakraProvider } from '@chakra-ui/react'
 
 describe('contact details card', () => {
-
     test('displays a phone number', async () => {
         const numberToFind = '+49 151 75625321';
         render(
@@ -14,4 +13,5 @@ describe('contact details card', () => {
         );
         expect(screen.queryByTestId('number')).toHaveTextContent(numberToFind);
     });
+
 });
