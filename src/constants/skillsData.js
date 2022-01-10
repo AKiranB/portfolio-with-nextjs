@@ -43,11 +43,10 @@ export const skillsDataLeft = [
     'Next',
     'Chakra UI',
     'HTML5',
-    'Material UI',
     'CSS3',
-    'Bootstrap',
+    'Material UI',
 
-    'Bcrypt',
+    'Bootstrap',
 
 ];
 export const skillsDataRight = [
@@ -58,7 +57,6 @@ export const skillsDataRight = [
     'GraphQL',
     "RESTful API's",
     'Axios',
-    'NPM',
     'GitHub',
 
 ]

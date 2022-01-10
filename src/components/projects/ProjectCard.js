@@ -6,80 +6,70 @@ import {
     Image,
     Stack,
     Button,
-    Heading
+    Heading,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import boxShadow from '../../constants/boxShadow'
-
+import boxShadow from "../../constants/boxShadow";
 
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
-
     return (
         <Flex
-            m='40px'
-            direction={'row'}
-            justifyContent={'flex-start'}
-            alignItems={'center'}
+            m="40px"
+            direction={"row"}
+            justifyContent={"flex-start"}
+            alignItems={"center"}
             className="projectCard"
-            width={'auto'}
-            height={'auto'}
+            width={"auto"}
+            height={"auto"}
             boxShadow={boxShadow}
         >
             <Image
                 className="projectLinks"
-                width={'50vw'}
-                height='100%'
-                alt='screenshot of website'
-                src={img} />
+                width={"50vw"}
+                height="100%"
+                alt="screenshot of website"
+                src={img}
+            />
 
             <Flex
-                justifyContent={'flex-start'}
-                ml={'20px'} mr={'20px'} alignItems={'flex-start'}
-                direction={'column'}
+                justifyContent={"flex-start"}
+                ml={"20px"}
+                mr={"20px"}
+                alignItems={"flex-start"}
+                direction={"column"}
             >
-                <Text >
-                    <Heading
-                    >
+                <Text>
+                    <Heading>
                         {title}
                         <hr></hr>
                     </Heading>
                     <br></br>
                     <br></br>
                 </Text>
-                <Text fontSize={['sm', 'md', 'xl']}>
-                    {description}
-                </Text>
-                <Stack mt={'30px'} direction={'row'}>
-                    <Link
-                        passHref
-                        href={githubUrl}>
+                <Text fontSize={["sm", "md", "xl"]}>{description}</Text>
+                <Stack mt={"30px"} direction={"row"}>
+                    <Link passHref href={githubUrl}>
                         <Button
-                            className='githubLink'
-                            mr={'20px'} alt="github"
+                            className="githubLink"
+                            mr={"20px"}
+                            alt="github"
                             src="/github.png"
-                            fontSize={['sm', 'md', 'xl']}>
+                            fontSize={["sm", "md", "xl"]}
+                        >
                             Github
                         </Button>
                     </Link>
                     <Box>
-                        <Link
-                            textDecoration="none"
-                            passHref
-                            href={appUrl}>
-                            <Button
-                                className='deploymentLink'
-                                fontSize={['sm', 'md', 'xl']}>
+                        <Link textDecoration="none" passHref href={appUrl}>
+                            <Button className="deploymentLink" fontSize={["sm", "md", "xl"]}>
                                 View
                             </Button>
                         </Link>
                     </Box>
                 </Stack>
-
             </Flex>
-
-        </Flex >
-    )
+        </Flex>
+    );
 };
 
-
-export default ProjectCard
+export default ProjectCard;
