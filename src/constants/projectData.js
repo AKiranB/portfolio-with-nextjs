@@ -10,8 +10,8 @@ const projectData = [
         title: 'React-TypeScript-Quiz',
         img: '/quiz.png',
         description: 'A Quiz application that allows users to answer questions and test their knowledge in a category with a level of difficulty of their choosing. This project is built with React, TypeScript and Chakra UI and uses the Open Trivia API to source questions. I started this project to get my hands dirty with Typescript and hone my skills in frontend development with React.',
-        appUrl: 'https://akiranb.github.io/React-TypeScript-Quiz/',
-        githubUrl: 'https://github.com/AKiranB/React-TypeScript-Quiz'
+        appUrl: 'https://akiranb.github.io/React-TS-Quiz/',
+        githubUrl: 'https://github.com/AKiranB/React-TS-Quiz'
     },
     {
         title: 'Castles, Fruits and Bats',

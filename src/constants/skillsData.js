@@ -45,7 +45,6 @@ export const skillsDataLeft = [
     'HTML5',
     'CSS3',
     'Material UI',
-
     'Bootstrap',
 
 ];
