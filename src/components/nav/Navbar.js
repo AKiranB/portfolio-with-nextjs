@@ -65,8 +65,8 @@ const Navbar = (props) => {
                     display={{ base: isOpen ? "block" : "none", md: "block" }}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <DarkModeSwitch />
-                    <SunIcon />
+                    {/* <DarkModeSwitch />
+                    <SunIcon /> */}
                 </Box>
             </>
         </Flex >

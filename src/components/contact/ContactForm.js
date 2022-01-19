@@ -76,9 +76,6 @@ export default function ContactForm() {
                 height='auto'
                 p='50px'
                 mb={'50px'}
-                borderWidth={'1px'}
-                boxShadow={boxShadow}
-
             >
                 <Box marginBottom={'15px'} width={'400px'} >
                     < form onSubmit={e => handleSubmit(e)} >
