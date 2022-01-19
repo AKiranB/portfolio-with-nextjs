@@ -14,18 +14,19 @@ import boxShadow from "../../constants/boxShadow";
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
     return (
         <Flex
-            m="40px"
+            m="70px"
             direction={"row"}
             justifyContent={"flex-start"}
             alignItems={"center"}
             className="projectCard"
             width={"auto"}
             height={"auto"}
+            borderRadius={'5px'}
             boxShadow={boxShadow}
         >
             <Image
                 className="projectLinks"
-                width={"50vw"}
+                width={"40vw"}
                 height="100%"
                 alt="screenshot of website"
                 src={img}
