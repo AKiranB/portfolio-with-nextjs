@@ -48,18 +48,14 @@ export default function ContactForm() {
             }
         });
     };
-    const conformationMessage = () => {
-        if (submitted) {
-            return (
-                <Badge
-                    fontSize={'small'}
-                    colorScheme={'green'}>
-                    Thanks! I&apos;ll get back to you as soon as possible
-                </Badge>)
-        } else {
-            return null
-        }
-    };
+
+    const confirmationMessage = submitted &&
+        <Badge
+            fontSize={'small'}
+            colorScheme={'green'}>
+            Thanks! I&apos;ll get back to you as soon as possible
+        </Badge>
+
     return (
         <>
             <Center id='contact' p='0' m='0'>
@@ -79,8 +75,8 @@ export default function ContactForm() {
             >
                 <Box marginBottom={'15px'} width={'400px'} >
                     < form onSubmit={e => handleSubmit(e)} >
-                        <FormControl>
-                            < FormLabel htmlFor='name'>Name</FormLabel>
+                        <FormControl id='Name'>
+                            < FormLabel htmlFor='Name'>Name</FormLabel>
                             < Input
                                 value={name}
                                 onChange={e => setName(e.target.value)}
@@ -92,8 +88,8 @@ export default function ContactForm() {
                                 colorScheme={'white'}
                             />
                         </FormControl>
-                        <FormControl isRequired>
-                            < FormLabel htmlFor='email'>Email</FormLabel>
+                        <FormControl id='Email' isRequired>
+                            < FormLabel htmlFor='Email'>Email</FormLabel>
                             < Input
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
@@ -104,7 +100,7 @@ export default function ContactForm() {
                                 placeholder='Please enter your email'
                             />
                         </FormControl>
-                        <FormControl isRequired>
+                        <FormControl id='message' isRequired>
                             < FormLabel htmlFor='message'>Message</FormLabel>
                             < Textarea
                                 value={message}
@@ -116,12 +112,11 @@ export default function ContactForm() {
                                 placeholder='Please enter your message'
                             />
                             <Center>
-                                {conformationMessage()}
+                                {confirmationMessage}
                             </Center>
                         </FormControl>
                         <Center margin={'25px   '}>
-                            < Button type='submit'>Send Message </Button >
-
+                            < Button id='submit' type='submit'>Send Message </Button >
                         </Center>
                     </form >
                 </Box>

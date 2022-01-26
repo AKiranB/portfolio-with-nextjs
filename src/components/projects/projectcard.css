@@ -2,6 +2,6 @@
 
 
 .projectCard{
-    background: conic-gradient(from 180deg at 40% 100%, #348da8 50deg, #7000FF 360deg);
+    background: -webkit-linear-gradient(#eee, rgb(121, 179, 233))
 
 }
