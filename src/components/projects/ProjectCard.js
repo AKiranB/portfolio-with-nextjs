@@ -19,9 +19,9 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
             justifyContent={"flex-start"}
             alignItems={"center"}
             className="projectCard"
-            width={"auto"}
-            height={"auto"}
-            borderRadius={'5px'}
+            width={"90%"}
+            height={"20%"}
+            borderRadius={'15px'}
             boxShadow={boxShadow}
         >
             <Image
@@ -34,27 +34,24 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
             <Flex
                 justifyContent={"flex-start"}
-                ml={"20px"}
-                mr={"20px"}
+                ml={"5%"}
+                mr={"3%"}
                 alignItems={"flex-start"}
                 direction={"column"}
             >
-                <Text>
+                <Text mt={'1rem'} color={'black'}>
                     <Heading>
-                        {title}
-                        <hr></hr>
+                        <u> {title}</u>
                     </Heading>
                     <br></br>
-                    <br></br>
                 </Text>
-                <Text fontSize={["sm", "md", "xl"]}>{description}</Text>
-                <Stack mt={"30px"} direction={"row"}>
+                <Text color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
+                <Stack mb={'2rem'} mt={"1.5rem"} direction={"row"}>
                     <Link passHref href={githubUrl}>
                         <Button
+                            color={'black'} colorScheme={'black'} variant={'outline'}
                             className="githubLink"
                             mr={"20px"}
-                            alt="github"
-                            src="/github.png"
                             fontSize={["sm", "md", "xl"]}
                         >
                             Github
@@ -62,7 +59,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                     </Link>
                     <Box>
                         <Link textDecoration="none" passHref href={appUrl}>
-                            <Button className="deploymentLink" fontSize={["sm", "md", "xl"]}>
+                            <Button color={'black'} colorScheme={'blue'} variant={'outline'} className="deploymentLink" fontSize={["sm", "md", "xl"]}>
                                 View
                             </Button>
                         </Link>

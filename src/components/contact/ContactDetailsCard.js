@@ -16,7 +16,7 @@ const ContactDetailsCard = () => {
     >
       <Center>
         <Flex direction={"column"}>
-          <Badge style={style}>{"anthony.kiran.boyle@gmail.com"}</Badge>
+          <Badge data-testid='email' style={style}>anthony.kiran.boyle@gmail.com</Badge>
           <Badge data-testid="number" style={style}>
             +49 151 75625321
           </Badge>

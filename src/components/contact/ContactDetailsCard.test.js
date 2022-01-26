@@ -14,4 +14,14 @@ describe('contact details card', () => {
         expect(screen.queryByTestId('number')).toHaveTextContent(numberToFind);
     });
 
+    test('displays an email address', async () => {
+        const emailToFind = 'anthony.kiran.boyle@gmail.com';
+        render(
+            <ChakraProvider>
+                <ContactDetailsCard />
+            </ChakraProvider>
+        );
+        expect(screen.queryByTestId('email')).toHaveTextContent(emailToFind);
+    });
+
 });
