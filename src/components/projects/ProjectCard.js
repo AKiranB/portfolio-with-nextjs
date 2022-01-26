@@ -44,7 +44,6 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                         <u> {title}</u>
                     </Heading>
                     <br></br>
-                    <br></br>
                 </Text>
                 <Text color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
                 <Stack mb={'2rem'} mt={"1.5rem"} direction={"row"}>
