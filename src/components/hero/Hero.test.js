@@ -7,12 +7,6 @@ describe('hero', () => {
   test('displays the title', async () => {
     render(<Hero />)
 
-    // fireEvent.click(screen.getByText('Load Greeting'))
-
-    // await waitFor(() => screen.getByRole('heading'))
-    // const x = screen.queryByTestId('title')
-    // console.log('test result>>>>>>>>>>>>>>>>>>>', x)
-
     expect(screen.queryByTestId('title')).toHaveTextContent('Hey there! My name is Kiran')
     // expect(screen.getByRole('button')).toBeDisabled()
   });
