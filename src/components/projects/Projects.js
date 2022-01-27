@@ -18,7 +18,7 @@ const Projects = () => {
             flexDirection={'row'}
         >
             <Center p='0' m='0'>
-                <Image boxSize={'20vw'} alt='logo' src='/projects.png' />
+                <Image boxSize={'25rem'} alt='logo' src='/projects.png' />
             </Center>
             <Flex
                 justifyContent={'center'}

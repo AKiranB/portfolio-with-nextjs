@@ -12,6 +12,7 @@ import Link from "next/link";
 import boxShadow from "../../constants/boxShadow";
 
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
+
     return (
         <Flex
             m="70px"
@@ -45,7 +46,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                     </Heading>
                     <br></br>
                 </Text>
-                <Text color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
+                <Text pb={'20px'} borderBottom={'1px'} borderRadius={'2px'} color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
                 <Stack mb={'2rem'} mt={"1.5rem"} direction={"row"}>
                     <Link passHref href={githubUrl}>
                         <Button

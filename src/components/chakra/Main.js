@@ -1,14 +1,17 @@
-import { Stack } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react';
+
+
+
 
 // eslint-disable-next-line react/display-name
 export const Main = (props) => (
-  <Stack
-    bgGradient='linear(#020024 20%, #674ce0  50%, #020024 70%)'
-    spacing="0.5rem"
-    width="100%"
-    height='auto'
-    mt="0vh"
-    px="1rem"
-    {...props}
-  />
+  <>
+    <Stack
+      spacing="0.5rem"
+      height='auto'
+      mt="0vh"
+      zIndex={5}
+      {...props}
+    />
+  </>
 )
