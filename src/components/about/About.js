@@ -15,6 +15,7 @@ const About = () => {
                     flexDirection={"row"}
                     mb={"0"}
                     mt={"10%"}
+                    backgroundColor={'black'}
                     boxShadow={boxShadow}
                     height={"auto"}
                 >

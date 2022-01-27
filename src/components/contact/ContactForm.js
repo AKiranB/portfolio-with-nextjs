@@ -60,8 +60,7 @@ export default function ContactForm() {
         <>
             <Center id='contact' p='0' m='0'>
                 <Image
-                    height={'20vw'}
-                    width={'20vw'}
+                    boxSize={'25rem'}
                     alt='logo'
                     src='/contact.png' />
             </Center>

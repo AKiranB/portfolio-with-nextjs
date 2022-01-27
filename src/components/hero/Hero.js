@@ -1,7 +1,7 @@
 import { Image } from '@chakra-ui/react'
 export const Hero = () => (
 
-  <div id="about" className='wrapper'>
+  <div style={{ 'marginTop': '100px' }} id="about" className='wrapper'>
     <div data-testid="title" className="typing-demo">
       Hey there! My name is Kiran
     </div>
