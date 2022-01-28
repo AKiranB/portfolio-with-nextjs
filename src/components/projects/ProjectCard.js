@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
     return (
         <Flex
-            m="70px"
+            m="100px"
             direction={"row"}
             justifyContent={"flex-start"}
             alignItems={"center"}
@@ -35,7 +35,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
             <Flex
                 justifyContent={"flex-start"}
-                ml={"5%"}
+                ml={"2%"}
                 mr={"3%"}
                 alignItems={"flex-start"}
                 direction={"column"}
@@ -46,7 +46,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                     </Heading>
                     <br></br>
                 </Text>
-                <Text pb={'20px'} borderBottom={'1px'} borderRadius={'2px'} color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
+                <Text pb={'20px'} borderRadius={'2px'} color={'black'} fontSize={["sm", "md", "xl"]}>{description}</Text>
                 <Stack mb={'2rem'} mt={"1.5rem"} direction={"row"}>
                     <Link passHref href={githubUrl}>
                         <Button
