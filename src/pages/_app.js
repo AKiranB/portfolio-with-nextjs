@@ -40,7 +40,6 @@ function MyApp({ Component, pageProps }) {
           init={particlesInit}
           loaded={particlesLoaded}
           options={{
-
             fpsLimit: 60,
             interactivity: {
               events: {
@@ -96,7 +95,7 @@ function MyApp({ Component, pageProps }) {
               number: {
                 density: {
                   enable: true,
-                  area: 2000,
+                  area: 1000,
                 },
                 value: 80,
               },
