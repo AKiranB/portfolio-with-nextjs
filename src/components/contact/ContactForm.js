@@ -71,12 +71,15 @@ export default function ContactForm() {
                 height='auto'
                 p='50px'
                 mb={'50px'}
+                backgroundColor={'black'}
+                borderRadius={'10px'}
             >
                 <Box marginBottom={'15px'} width={'400px'} >
                     < form onSubmit={e => handleSubmit(e)} >
                         <FormControl id='Name'>
                             < FormLabel htmlFor='Name'>Name</FormLabel>
                             < Input
+                                mb={'30px'}
                                 value={name}
                                 onChange={e => setName(e.target.value)}
                                 type='text'
@@ -90,6 +93,7 @@ export default function ContactForm() {
                         <FormControl id='Email' isRequired>
                             < FormLabel htmlFor='Email'>Email</FormLabel>
                             < Input
+                                mb={'30px'}
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
                                 type='email'
@@ -102,6 +106,7 @@ export default function ContactForm() {
                         <FormControl id='message' isRequired>
                             < FormLabel htmlFor='message'>Message</FormLabel>
                             < Textarea
+                                mb={'30px'}
                                 value={message}
                                 onChange={e => setMessage(e.target.value)}
                                 type='text'
