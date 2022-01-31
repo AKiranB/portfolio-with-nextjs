@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                 alignItems={"flex-start"}
                 direction={"column"}
             >
-                <Text mt={'1rem'} color={'black'}>
+                <Text mb={'1rem'} mt={'1rem'} color={'black'}>
                     <Heading>
                         <u> {title}</u>
                     </Heading>

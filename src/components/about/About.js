@@ -16,7 +16,8 @@ const About = () => {
                     mb={"0"}
                     mt={"10%"}
                     backgroundColor={'black'}
-                    boxShadow={boxShadow}
+                    borderRadius={'5px'}
+
                     height={"auto"}
                 >
                     <Flex mb={"40px"} pl={"30px"} flexDirection={"column"}>
