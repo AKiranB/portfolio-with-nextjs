@@ -10,6 +10,8 @@ import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
 import { DarkModeSwitch } from '../chakra/DarkModeSwitch';
 import { NavLinks } from "./NavLink";
 
+
+
 const Navbar = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const handleToggle = () => (isOpen ? onClose() : onOpen());
@@ -27,6 +29,7 @@ const Navbar = (props) => {
             width='100%'
             {...props}
         >
+
             <>
                 <NavLinks link='#about'>
                     <Image
