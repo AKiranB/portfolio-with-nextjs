@@ -27,6 +27,7 @@ const Navbar = (props) => {
             width='100%'
             {...props}
         >
+        
             <>
                 <NavLinks link='#about'>
                     <Image
