@@ -22,7 +22,6 @@ export const skillsDataRight = [
     "RESTful API's",
     'Axios',
     'GitHub',
-
 ]
 
 

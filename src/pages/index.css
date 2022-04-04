@@ -1,8 +1,7 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
 
-  }
-
-  .particles{
-    z-index: -1 !important ;
-  }
+.particles {
+  z-index: -1 !important;
+}
