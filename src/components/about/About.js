@@ -20,6 +20,7 @@ const About = () => {
           justifyContent="center"
           alignItems="center"
           width="80%"
+          minWidth="800px"
           flexDirection={"row"}
           mb={"0"}
           mt={"10%"}
