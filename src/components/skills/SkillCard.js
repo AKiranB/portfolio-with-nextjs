@@ -12,7 +12,6 @@ const SkillCard = ({ skillsData }) => {
   return (
     <Flex
       borderRadius="lg"
-      m="25px"
       p="15px"
       direction={"column"}
       justifyContent={"flex-start"}

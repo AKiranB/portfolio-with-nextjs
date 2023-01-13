@@ -14,7 +14,7 @@ import boxShadow from "../../constants/boxShadow";
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
   return (
     <Flex
-      m="75px"
+      mb="75px"
       direction={"row"}
       justifyContent={"flex-start"}
       alignItems={"center"}
