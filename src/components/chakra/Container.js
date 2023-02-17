@@ -1,4 +1,5 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
+import { theme } from "../../constants/colors";
 
 export const Container = (props) => {
   const { colorMode } = useColorMode();
@@ -8,7 +9,7 @@ export const Container = (props) => {
     <Flex
       direction="column"
       alignItems="center"
-      bgColor={"#078da8"}
+      bgColor={theme['background']}
       color={color[colorMode]}
       {...props}
     />

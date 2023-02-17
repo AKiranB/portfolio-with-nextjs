@@ -5,7 +5,6 @@ import {
   Text,
   List,
   ListItem,
-  Heading,
 } from "@chakra-ui/react";
 
 const SkillCard = ({ skillsData }) => {
@@ -16,7 +15,7 @@ const SkillCard = ({ skillsData }) => {
       direction={"column"}
       justifyContent={"flex-start"}
       alignItems={"center"}
-      bgGradient="linear(to-l,  #4141cd,  #7000ff )"
+
     >
       <Box m="10px" p="10px" w="15vw">
         <Text textAlign={"center"}>

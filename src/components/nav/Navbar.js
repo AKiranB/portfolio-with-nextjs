@@ -20,9 +20,9 @@ const Navbar = (props) => {
             justify="space-between"
             wrap="wrap"
             padding={2}
-            bg="black"
+            bg='#000000'
             color="white"
-            opacity={'97%'}
+            opacity={'100%'}
             position={'fixed'}
             width='100%'
             {...props}
