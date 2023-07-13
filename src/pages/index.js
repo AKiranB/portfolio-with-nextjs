@@ -1,5 +1,4 @@
 import { Hero } from "../components/hero/Hero";
-import BackgroundAnimation from "../components/BackgroundAnimation";
 import About from "../components/about/About";
 import { Flex } from "@chakra-ui/react";
 import Skills from "../components/skills/Skills";

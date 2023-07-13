@@ -1,5 +1,4 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
-import Navbar from "../components/nav/Navbar";
 import theme from "../theme";
 import { Container } from "../components/chakra/Container";
 import { Main } from "../components/chakra/Main";
@@ -12,6 +11,7 @@ import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
 import "./index.css";
 import Particles from "react-tsparticles";
+import { theme as colors } from "../constants/colors";
 
 const particlesInit = (main) => {
   // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
@@ -70,7 +70,7 @@ function MyApp({ Component, pageProps }) {
                 width: 5,
               },
               links: {
-                color: "#ad2d47",
+                color: `${colors.secondary.teal}`,
                 distance: 150,
                 enable: true,
                 opacity: 0.5,

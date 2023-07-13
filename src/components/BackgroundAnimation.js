@@ -1,4 +1,5 @@
 import React from 'react';
+import { theme } from '../constants/colors';
 
 const BackgroundAnimation = () => (
     <div style={{
@@ -41,7 +42,7 @@ const BackgroundAnimation = () => (
                 transform="translate(-295.027 -193.118)"
                 rx="1.07306"
                 ry="1.07433"
-                fill="#3b3bad "
+                fill={theme.secondary.purple}
             >
                 <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
                     <mpath xlinkHref="#path_2" />
@@ -62,7 +63,7 @@ const BackgroundAnimation = () => (
                 transform="translate(-295.027 -193.118)"
                 rx="1.07306"
                 ry="1.07433"
-                fill="#3b3bad "
+                fill={theme.secondary.purple}
             >
                 <animateMotion
                     dur="5s"
@@ -93,7 +94,7 @@ const BackgroundAnimation = () => (
                 rx="1.07433"
                 ry="1.07306"
                 transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-                fill="#3b3bad "
+                fill={theme.secondary.purple}
             >
                 <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
                     <mpath xlinkHref="#path_0" />
@@ -114,8 +115,7 @@ const BackgroundAnimation = () => (
                 rx="1.07433"
                 ry="1.07306"
                 transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-                fill="#3b3bad"
-            >
+                fill={theme.secondary.purple}>
                 <animateMotion
                     dur="10s"
                     begin="1"
@@ -145,7 +145,7 @@ const BackgroundAnimation = () => (
                 rx="1.07306"
                 ry="1.07433"
                 transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-                fill="#3b3bad "
+                fill={theme.secondary.purple}
             >
                 <animateMotion
                     dur="5s"
@@ -241,7 +241,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(301 301) rotate(90) scale(300)"
                 >
-                    <stop offset="0.333333" stopColor="#FBFBFB" />
+                    <stop offset="0.333333" stopColor={theme.secondary.purple} />
                     <stop offset="1" stopColor="white" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
@@ -252,7 +252,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(301 301) rotate(90) scale(300)"
                 >
-                    <stop offset="0.333333" stopColor="#FBFBFB" />
+                    <stop offset="0.333333" stopColor={theme.secondary.purple} />
                     <stop offset="1" stopColor="white" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
@@ -263,7 +263,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(301 301) rotate(90) scale(300)"
                 >
-                    <stop offset="0.333333" stopColor="#FBFBFB" />
+                    <stop offset="0.333333" stopColor={theme.secondary.purple} />
                     <stop offset="1" stopColor="white" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
@@ -274,7 +274,7 @@ const BackgroundAnimation = () => (
                     y2="218.154"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#28b463" />
+                    <stop stopColor={theme.secondary.purple} />
                     <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
@@ -286,7 +286,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                 >
                     <stop stopColor="#3b3bad " />
-                    <stop offset="1" stopColor="#3b3bad" stopOpacity="0" />
+                    <stop offset="1" stopColor={theme.secondary.purple} stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="paint5_linear"
@@ -297,7 +297,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                 >
                     <stop stopColor="#F46737" />
-                    <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+                    <stop offset="1" stopColor={theme.secondary.purple} stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="paint6_linear"
@@ -308,7 +308,7 @@ const BackgroundAnimation = () => (
                     gradientUnits="userSpaceOnUse"
                 >
                     <stop stopColor="#28b463 " />
-                    <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+                    <stop offset="1" stopColor={theme.secondary.purple} stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="paint7_linear"

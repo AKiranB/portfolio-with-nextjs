@@ -11,13 +11,16 @@ const ContactDetailsCard = () => {
       height={"auto"}
       width={"auto"}
       p={"20px"}
-      bgGradient="linear(to-l,  #4141cd,  #7000ff )"
-      mb={"50px"}
+      b={"50px"}
+      borderRadius={"10px"}
+      backgroundColor={"gray.100"}
     >
       <Center>
         <Flex direction={"column"}>
-          <Badge data-testid='email' style={style}>anthony.kiran.boyle@gmail.com</Badge>
-          <Badge data-testid="number" style={style}>
+          <Badge color={"black"} data-testid="email" style={style}>
+            anthony.kiran.boyle@gmail.com
+          </Badge>
+          <Badge color={"black"} data-testid="number" style={style}>
             +49 151 75625321
           </Badge>
           <Flex mt="20px" ml={"5px"} direction={"row"}>
