@@ -1,6 +1,23 @@
+.projectCard {
+    background: -webkit-linear-gradient(rgb(141, 135, 230), rgb(121, 179, 233));
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 1400px) {
+    .projectCard {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+  
+    }
+    .projectCard div{
+        max-width: 800px 
+    }
+  }
+  
+  .projectCard img {
+    border-radius: 8px;
+    margin-right: 0;
+  }
 
-
-
-.projectCard{
-    background: -webkit-linear-gradient(rgb(141, 135, 230), rgb(121, 179, 233))
-};

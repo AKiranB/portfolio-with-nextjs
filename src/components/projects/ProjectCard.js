@@ -1,6 +1,5 @@
 import {
   Box,
-  Badge,
   Flex,
   Text,
   Image,
@@ -9,24 +8,20 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import boxShadow from "../../constants/boxShadow";
 
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
   return (
     <Flex
+      className="projectCard"
       mb="75px"
-      direction={"row"}
-      justifyContent={"flex-start"}
-      alignItems={"center"}
       width={"90%"}
-      height={"320px"}
-      backgroundColor={"#FAF9F6"}
+      height={"100%"}
       borderRadius={"4px"}
     >
       <Image
         className="projectLinks"
-        width={"40vw"}
-        height="100%"
+        width={"800px"}
+        height="400px"
         alt="screenshot of website"
         src={img}
       />
@@ -49,7 +44,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
           borderRadius={"2px"}
           color={"black"}
           height={"160px"}
-          fontSize={["sm", "md", "xl"]}
+          fontSize={"xl"}
         >
           {description}
         </Text>
@@ -61,7 +56,6 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
               variant={"outline"}
               className="githubLink"
               mr={"20px"}
-              fontSize={["sm", "md", "xl"]}
             >
               Github
             </Button>
@@ -73,7 +67,6 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                 colorScheme={"blue"}
                 variant={"outline"}
                 className="deploymentLink"
-                fontSize={["sm", "md", "xl"]}
               >
                 View
               </Button>
