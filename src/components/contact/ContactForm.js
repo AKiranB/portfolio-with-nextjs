@@ -57,7 +57,7 @@ export default function ContactForm() {
       <Center id="contact" p="0" m="0">
         <Image boxSize={"25rem"} alt="logo" src="/contact.png" />
       </Center>
-      <ContactDetailsCard />
+
       <Text mb={"50px"}>Or contact me directly using the form below!</Text>
       <Flex
         alignItems={"center"}
@@ -120,6 +120,7 @@ export default function ContactForm() {
           </form>
         </Box>
       </Flex>
+      <ContactDetailsCard />
     </>
   );
 }
