@@ -14,18 +14,16 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
     <Flex
       className="projectCard"
       mb="75px"
-      width={"90%"}
+      width={"80%"}
       height={"100%"}
       borderRadius={"4px"}
     >
       <Image
         className="projectLinks"
-        width={"800px"}
         height="400px"
         alt="screenshot of website"
         src={img}
       />
-
       <Flex
         justifyContent={"flex-start"}
         ml={"2%"}
@@ -48,18 +46,21 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
         >
           {description}
         </Text>
-        <Stack mb={"2rem"} mt={"1.5rem"} direction={"row"}>
-          <Link passHref href={githubUrl}>
-            <Button
-              color={"black"}
-              colorScheme={"black"}
-              variant={"outline"}
-              className="githubLink"
-              mr={"20px"}
-            >
-              Github
-            </Button>
-          </Link>
+        <Stack mb={"16px"} mt={"32px"} direction={"row"}>
+          {githubUrl && (
+            <Link passHref href={githubUrl}>
+              <Button
+                color={"black"}
+                backgroundColor={"black"}
+                colorScheme={"black"}
+                className="githubLink"
+                mr={"20px"}
+              >
+                Github
+              </Button>
+            </Link>
+          )}
+
           <Box>
             <Link textDecoration="none" passHref href={appUrl}>
               <Button

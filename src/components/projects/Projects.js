@@ -35,7 +35,7 @@ const Projects = () => {
         />
       </Flex>
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Button onClick={handleIndexChange} color={"black"}>
+        <Button onClick={handleIndexChange} backgroundColor={"black"}>
           Next
         </Button>
       </Box>
