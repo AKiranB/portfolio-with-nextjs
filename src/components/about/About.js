@@ -23,7 +23,7 @@ const About = () => {
         mt={"5%"}
         backgroundColor={theme.primary.white}
         borderRadius={"5px"}
-        border={`3px solid ${theme.primary.body}`}
+        border={`1px solid ${theme.primary.body}`}
         height={"auto"}
       >
         <Flex mb={"40px"} pl={"30px"} flexDirection={"column"}>

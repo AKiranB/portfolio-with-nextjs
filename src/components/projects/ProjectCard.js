@@ -8,6 +8,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { theme } from "../../constants/colors";
 
 const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
   return (
@@ -16,7 +17,9 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
       mb="75px"
       width={"80%"}
       height={"100%"}
-      borderRadius={"4px"}
+      backgroundColor={theme.primary.white}
+      borderRadius={"5px"}
+      border={`1px solid ${theme.primary.body}`}
     >
       <Image
         className="projectLinks"
@@ -51,9 +54,9 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
             <Link passHref href={githubUrl}>
               <Button
                 color={"black"}
-                backgroundColor={"black"}
                 colorScheme={"black"}
                 className="githubLink"
+                variant="fill"
                 mr={"20px"}
               >
                 Github
@@ -63,12 +66,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
 
           <Box>
             <Link textDecoration="none" passHref href={appUrl}>
-              <Button
-                color={"black"}
-                colorScheme={"blue"}
-                variant={"outline"}
-                className="deploymentLink"
-              >
+              <Button color={"black"} colorScheme={"black"} variant={"outline"}>
                 View
               </Button>
             </Link>

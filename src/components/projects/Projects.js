@@ -35,7 +35,12 @@ const Projects = () => {
         />
       </Flex>
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Button onClick={handleIndexChange} backgroundColor={"black"}>
+        <Button
+          onClick={handleIndexChange}
+          colorScheme="black"
+          color={"black"}
+          variant="outline"
+        >
           Next
         </Button>
       </Box>
