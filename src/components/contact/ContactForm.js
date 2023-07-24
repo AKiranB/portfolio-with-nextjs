@@ -5,7 +5,7 @@ import {
   Button,
   Box,
   Center,
-  Image,
+  Title,
   Textarea,
   Badge,
   Flex,
@@ -53,9 +53,15 @@ export default function ContactForm() {
   );
 
   return (
-    <>
-      <Center id="contact" p="0" m="0">
-        <Image boxSize={"25rem"} alt="logo" src="/contact.png" />
+    <Box mb={"42px"}>
+      <Center id="contact" p="0" mt={"200px"}>
+        <Text
+          color={"black"}
+          sx={{ textDecor: "underline", fontWeight: "700" }}
+          fontSize={"38px"}
+        >
+          {"Contact"}
+        </Text>
       </Center>
 
       <Text mb={"50px"}>Or contact me directly using the form below!</Text>
@@ -121,6 +127,6 @@ export default function ContactForm() {
         </Box>
       </Flex>
       <ContactDetailsCard />
-    </>
+    </Box>
   );
 }

@@ -1,7 +1,8 @@
-import { Box, Center, Flex, Image, Button } from "@chakra-ui/react";
+import { Box, Center, Flex, Image, Button, Heading } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectData from "../../constants/projectData";
 import { useState } from "react";
+import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const Projects = () => {
   const [index, setCurrentIndex] = useState(0);
@@ -21,8 +22,14 @@ const Projects = () => {
       alignItems={"center"}
       flexDirection={"row"}
     >
-      <Center p="0" m="0">
-        <Image boxSize={"25rem"} alt="logo" src="/projects.png" />
+      <Center p="0" mb="128px">
+        <Heading
+          sx={{ textDecor: "underline", fontSize: "38px" }}
+          color={"black"}
+        >
+          {" "}
+          Projects
+        </Heading>
       </Center>
       <Flex justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
         <ProjectCard
@@ -35,7 +42,13 @@ const Projects = () => {
         />
       </Flex>
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Button onClick={handleIndexChange} backgroundColor={"black"}>
+        <Button
+          rightIcon={<ArrowRightIcon />}
+          onClick={handleIndexChange}
+          colorScheme="black"
+          color={"black"}
+          variant="outline"
+        >
           Next
         </Button>
       </Box>
