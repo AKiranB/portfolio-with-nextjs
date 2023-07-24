@@ -34,12 +34,11 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
         alignItems={"flex-start"}
         direction={"column"}
       >
-        <Text mt={"12px"} color={"black"}>
-          <Heading>
-            <u> {title}</u>
-          </Heading>
-          <br></br>
+        <Text color={"black"} sx={{ fontWeight: "700" }} fontSize={"28px"}>
+          {title}
         </Text>
+        <br></br>
+
         <Text
           pb={"20px"}
           borderRadius={"2px"}
