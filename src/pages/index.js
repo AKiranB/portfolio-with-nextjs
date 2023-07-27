@@ -4,11 +4,9 @@ import { Flex } from "@chakra-ui/react";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/contact/Contact";
-import Navbar from "../components/nav/Navbar";
 
 const Index = () => (
   <>
-    <Navbar />
     <Flex direction={"column"} align={"center"}>
       <Hero />
       <About />

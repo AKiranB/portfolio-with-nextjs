@@ -5,7 +5,6 @@ import {
   Heading,
   Wrap,
   WrapItem,
-  Container,
   Center,
 } from "@chakra-ui/react";
 import { skillsDataLeft } from "../../constants/skillsData";
@@ -14,7 +13,7 @@ import { theme } from "../../constants/colors";
 
 const About = () => {
   return (
-    <Center width={["40%", "70%"]}>
+    <Center minWidth={"940px"} width={"70%"}>
       <Flex
         justifyContent="center"
         alignItems="center"
@@ -35,11 +34,7 @@ const About = () => {
             {" "}
             About me
           </Heading>
-          <Box
-            color={theme.primary.body}
-            padding={0}
-            fontSize={["sm", "md", "lg"]}
-          >
+          <Box color={theme.primary.body} padding={0} fontSize={"md"}>
             <br /> I am a web-developer with two years of professional
             experience based in Berlin, Germany. In my previous roles, I have
             worked extensively with a wide range of technologies and tools,

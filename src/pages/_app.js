@@ -12,10 +12,7 @@ import "@fontsource/open-sans/700.css";
 import "./index.css";
 import Particles from "react-tsparticles";
 import { theme as colors } from "../constants/colors";
-
-const particlesInit = (main) => {
-  // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-};
+import Navbar from "../components/nav/Navbar";
 
 const particlesLoaded = (container) => {
   console.log(container);
@@ -29,10 +26,10 @@ function MyApp({ Component, pageProps }) {
           useSystemColorMode: true,
         }}
       >
+        <Navbar />
         <Particles
           className="particles"
           id="tsparticles"
-          init={particlesInit}
           loaded={particlesLoaded}
           options={{
             fpsLimit: 60,
