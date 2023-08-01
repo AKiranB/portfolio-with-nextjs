@@ -4,7 +4,7 @@ import projectData from "../../constants/projectData";
 import { useState } from "react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 
-const Projects = () => {
+const Projects = ({ ...props }) => {
   const [index, setCurrentIndex] = useState(0);
   const handleIndexChange = () => {
     if (index + 1 >= projectData.length) {
@@ -16,20 +16,14 @@ const Projects = () => {
 
   return (
     <Box
-      mt={"200px"}
+      {...props}
       id="projects"
       justifyContent={"center"}
       alignItems={"center"}
       flexDirection={"row"}
     >
-      <Center p="0" mb="128px">
-        <Heading
-          sx={{ textDecor: "underline", fontSize: "38px" }}
-          color={"black"}
-        >
-          {" "}
-          Projects
-        </Heading>
+      <Center marginBottom={"64px"} p="0">
+        <Heading> Projects</Heading>
       </Center>
       <Flex justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
         <ProjectCard
@@ -39,14 +33,14 @@ const Projects = () => {
           appUrl={projectData[index].appUrl}
           githubUrl={projectData[index].githubUrl}
           img={projectData[index].img}
+          learnMore={projectData[index].learnMore}
         />
       </Flex>
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
         <Button
-          rightIcon={<ArrowRightIcon />}
+          rightIcon={<ArrowRightIcon color={"white"} />}
           onClick={handleIndexChange}
-          colorScheme="black"
-          color={"black"}
+          colorScheme="white"
           variant="outline"
         >
           Next

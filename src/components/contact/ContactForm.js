@@ -5,16 +5,16 @@ import {
   Button,
   Box,
   Center,
-  Title,
   Textarea,
   Badge,
+  Heading,
   Flex,
   Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import ContactDetailsCard from "./ContactDetailsCard";
 
-export default function ContactForm() {
+export default function ContactForm({ ...props }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -53,23 +53,17 @@ export default function ContactForm() {
   );
 
   return (
-    <Box mb={"42px"}>
-      <Center id="contact" p="0" mt={"200px"}>
-        <Text
-          color={"black"}
-          sx={{ textDecor: "underline", fontWeight: "700" }}
-          fontSize={"38px"}
-        >
-          {"Contact"}
-        </Text>
+    <Box {...props} mb={"42px"}>
+      <Center id="contact" p="0">
+        <Heading d>{"Contact"}</Heading>
       </Center>
 
-      <Text mb={"50px"}>Or contact me directly using the form below!</Text>
       <Flex
         alignItems={"center"}
         height="auto"
         p="50px"
         mb={"50px"}
+        mt={"64px"}
         backgroundColor={"gray.50"}
         borderRadius={"10px"}
       >

@@ -1,37 +1,42 @@
-import { extendTheme } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 const fonts = {
-  heading: 'Raleway',
-  body: 'Raleway'
-}
+  heading: "Raleway",
+  body: "Raleway",
+};
 
 const breakpoints = createBreakpoints({
-  sm: '50em',
-  md: '60em',
-  lg: '70em',
-  xl: '80em',
-})
+  sm: "50em",
+  md: "60em",
+  lg: "70em",
+  xl: "80em",
+});
 
 const theme = extendTheme({
   colors: {
-    black: '#16161D',
+    black: "#16161D",
   },
   fonts,
   breakpoints,
+  components: {
+    Heading: {
+      baseStyle: {
+        color: "white",
+      },
+    },
+  },
   textStyles: {
     h1: {
-      fontSize: '100px',
-      lineHeight: '110%',
-      letterSpacing: '-2%',
-      fonts: fonts
-
+      lineHeight: "110%",
+      letterSpacing: "-2%",
+      color: "white",
+      fonts: fonts,
     },
     h2: {
-      fontSize: '100px',
-      lineHeight: '110%',
-      letterSpacing: '-2%',
-
+      lineHeight: "110%",
+      letterSpacing: "-2%",
+      textDocoration: "underline",
     },
   },
   icons: {
@@ -51,9 +56,9 @@ const theme = extendTheme({
           />
         </svg>
       ),
-      viewBox: '0 0 3000 3163',
+      viewBox: "0 0 3000 3163",
     },
   },
-})
+});
 
-export default theme
+export default theme;
