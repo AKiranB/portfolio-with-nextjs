@@ -1,25 +1,24 @@
-import {
-  Box,
-  Flex,
-  Text,
-  Image,
-  Stack,
-  Button,
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Stack, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import { theme } from "../../constants/colors";
 
-const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
+const ProjectCard = ({
+  title,
+  description,
+  img,
+  appUrl,
+  githubUrl,
+  learnMore,
+}) => {
+  console.log(learnMore);
   return (
     <Flex
       className="projectCard"
-      mb="75px"
+      mb="64px"
       width={"80%"}
       height={"100%"}
       backgroundColor={theme.primary.white}
       borderRadius={"5px"}
-      border={`1px solid ${theme.primary.body}`}
     >
       <Image
         className="projectLinks"
@@ -51,7 +50,7 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
         >
           {description}
         </Text>
-        <Stack mb={"16px"} mt={"32px"} direction={"row"}>
+        <Stack mb={"16px"} mt={"64px"} direction={"row"}>
           {githubUrl && (
             <Link passHref href={githubUrl}>
               <Button
@@ -72,6 +71,11 @@ const ProjectCard = ({ title, description, img, appUrl, githubUrl }) => {
                 View
               </Button>
             </Link>
+            {learnMore && (
+              <Link href={learnMore}>
+                <Button color={"black"}> Learn More...</Button>
+              </Link>
+            )}
           </Box>
         </Stack>
       </Flex>

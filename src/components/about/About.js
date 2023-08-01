@@ -45,6 +45,7 @@ const About = () => {
             sharer and consumer of knowledge, who enjoys the challenges of
             problem-solving both individually and in a team.
             <br />
+            <br />
             In my free time, I am a callisthenics fanatic, avid music producer,
             sound designer and synthesizer enthusiast with a particular interest
             in modular synthesis.

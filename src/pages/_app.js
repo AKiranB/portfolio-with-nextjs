@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }) {
             },
             particles: {
               color: {
-                value: "#ffffff",
+                value: "#faf9ff",
                 width: 5,
               },
               links: {

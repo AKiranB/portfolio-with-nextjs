@@ -1,7 +1,7 @@
 export const theme = {
   black: "#172B4D",
   white: "#0052CC",
-  background: "#FFFFFF",
+  background: "#172B4D",
 
   primary: {
     actions: "#0052CC",

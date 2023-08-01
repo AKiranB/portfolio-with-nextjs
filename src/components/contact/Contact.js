@@ -1,9 +1,9 @@
 import ContactForm from "./ContactForm";
 
-export default function Contact() {
+export default function Contact({ ...props }) {
   return (
     <>
-      <ContactForm />
+      <ContactForm {...props} />
     </>
   );
 }
