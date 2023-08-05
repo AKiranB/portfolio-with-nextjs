@@ -10,7 +10,6 @@ const ProjectCard = ({
   githubUrl,
   learnMore,
 }) => {
-  console.log(learnMore);
   return (
     <Flex
       className="projectCard"
