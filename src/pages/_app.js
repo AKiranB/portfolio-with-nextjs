@@ -9,14 +9,11 @@ import "../components/contact/contact.css";
 import "../components/about/about.css";
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
+import "@fontsource/roboto";
 import "./index.css";
 import Particles from "react-tsparticles";
 import { theme as colors } from "../constants/colors";
 import Navbar from "../components/nav/Navbar";
-
-const particlesLoaded = (container) => {
-  console.log(container);
-};
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,7 +27,6 @@ function MyApp({ Component, pageProps }) {
         <Particles
           className="particles"
           id="tsparticles"
-          loaded={particlesLoaded}
           options={{
             fpsLimit: 60,
             interactivity: {
@@ -65,13 +61,6 @@ function MyApp({ Component, pageProps }) {
               color: {
                 value: "#faf9ff",
                 width: 5,
-              },
-              links: {
-                color: `${colors.secondary.teal}`,
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 2,
               },
               collisions: {
                 enable: true,

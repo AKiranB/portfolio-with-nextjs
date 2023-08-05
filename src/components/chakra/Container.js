@@ -7,9 +7,13 @@ export const Container = (props) => {
 
   return (
     <Flex
+      minHeight={"100vh"}
       direction="column"
-      alignItems="center"
-      bgColor={theme['background']}
+      alignItems="flex-start"
+      justifyContent={"flex-start"}
+      paddingLeft={"64px"}
+      paddingRight={"64px"}
+      bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
       color={color[colorMode]}
       {...props}
     />

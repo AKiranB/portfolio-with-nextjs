@@ -9,10 +9,10 @@ import { theme } from "../constants/colors";
 const Index = () => (
   <>
     <Flex direction={"column"} align={"center"}>
-      <Hero />
+      {/* <Hero /> */}
       <About />
-      <Projects sx={{ marginTop: "256px" }} />
-      <Contact sx={{ marginTop: "256px" }} />
+      {/* <Projects sx={{ marginTop: 0 }} />
+      <Contact sx={{ marginTop: 0 }} /> */}
     </Flex>
   </>
 );
