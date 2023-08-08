@@ -8,11 +8,8 @@ export const Container = (props) => {
   return (
     <Flex
       minHeight={"100vh"}
-      direction="column"
-      alignItems="flex-start"
-      justifyContent={"flex-start"}
-      paddingLeft={"64px"}
-      paddingRight={"64px"}
+      paddingLeft={"128px"}
+      paddingRight={"128px"}
       bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
       color={color[colorMode]}
       {...props}

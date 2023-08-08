@@ -13,12 +13,17 @@ export const skillsDataLeft = [
   "Bootstrap",
 ];
 export const skillsDataRight = [
-  "JavaScript",
+  "TypeScript",
   "Express",
   "MongoDB",
   "Node",
   "GraphQL",
-  "RESTful API's",
   "Axios",
   "GitHub",
+];
+
+export const skillsData = [
+  { name: "TypeScript", image: "/typescript.png" },
+  { name: "JavaScript", image: "/javascript.png" },
+  { name: "NestJS", image: "/nest.svg" },
 ];

@@ -2,11 +2,8 @@ import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import { Container } from "../components/chakra/Container";
 import { Main } from "../components/chakra/Main";
-import "../components/hero/hero.css";
 import "../components/nav/nav.css";
-import "../components/projects/projectcard.css";
-import "../components/contact/contact.css";
-import "../components/about/about.css";
+
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
 import "@fontsource/roboto";
@@ -94,8 +91,7 @@ function MyApp({ Component, pageProps }) {
             detectRetina: true,
           }}
         />
-
-        <Container height="auto">
+        <Container>
           <Main>
             <Component {...pageProps} />
           </Main>

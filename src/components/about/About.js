@@ -8,13 +8,10 @@ const About = () => {
                     "nav footer"`}
       gridTemplateRows={"auto 1fr auto"}
       gridTemplateColumns={"auto 1fr"}
-      h="200px"
-      gap="1"
-      color="blackAlpha.700"
       fontWeight="bold"
       mt={"240px"}
     >
-      <GridItem pl="2" area={"header"}>
+      <GridItem area={"header"}>
         <Heading fontSize={"96px"}>Hey there, I'm Kiran</Heading>
       </GridItem>
       <GridItem pl="2" area={"nav"}>
@@ -23,7 +20,7 @@ const About = () => {
           src="/kiran.jpg"
         ></Image>
       </GridItem>
-      <GridItem color={"gray.500"} pl="2" area={"main"} maxWidth={"600px"}>
+      <GridItem color={"gray.200"} pl="2" area={"main"} maxWidth={"600px"}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
