@@ -14,13 +14,14 @@ const About = () => {
       <GridItem area={"header"}>
         <Heading fontSize={"96px"}>Hey there, I'm Kiran</Heading>
       </GridItem>
-      <GridItem pl="2" area={"nav"}>
-        <Image
-          sx={{ minHeight: "96px", borderRadius: "50%", maxHeight: "96px" }}
-          src="/kiran.jpg"
-        ></Image>
-      </GridItem>
-      <GridItem color={"gray.200"} pl="2" area={"main"} maxWidth={"600px"}>
+
+      <GridItem
+        color={"gray.200"}
+        mt={"32px"}
+        pl="2"
+        area={"main"}
+        maxWidth={"600px"}
+      >
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and

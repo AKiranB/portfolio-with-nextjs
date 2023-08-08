@@ -4,9 +4,9 @@ import SkillCard from "./skillCard";
 
 export default function Skills() {
   return (
-    <Box mt={'256px'}>
-    <Heading size="lg">My Skills</Heading>
-    <Grid templateColumns="repeat(3, 1fr)" gap={6}>
+    <Box mb={'256px'} mt={'512px'}>
+    <Heading fontSize={'64px'} mb={'32px'}>My Skills</Heading>
+    <Grid templateColumns="repeat(3, 1fr)" gap={32}>
       {skillsData.map((skill) => {
         return <SkillCard skill={skill} />;
       })}

@@ -4,11 +4,14 @@ import Skills from "../components/skills";
 
 const Index = () => (
   <>
-    <Flex direction={"column"}>
+    <Flex
+      alignItems={"center"}
+      justifyContent={"center"}
+      width={"100vw"}
+      direction={"column"}
+    >
       <Box>
         <About />
-      </Box>
-      <Box mt={"8rem"}>
         <Skills />
       </Box>
       {/* <Projects sx={{ marginTop: 0 }} />
