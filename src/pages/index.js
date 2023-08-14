@@ -4,12 +4,7 @@ import Skills from "../components/skills";
 
 const Index = () => (
   <>
-    <Flex
-      alignItems={"center"}
-      justifyContent={"center"}
-      width={"100vw"}
-      direction={"column"}
-    >
+    <Flex alignItems={"center"} justifyContent={"center"} direction={"column"}>
       <Box>
         <About />
         <Skills />

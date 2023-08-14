@@ -8,6 +8,7 @@ export const Container = (props) => {
   return (
     <Flex
       minHeight={"100vh"}
+      maxWidgth={"100vw"}
       bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
       color={color[colorMode]}
       {...props}

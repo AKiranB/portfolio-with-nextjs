@@ -4,7 +4,7 @@ export default function SkillCard({ skill }) {
     <Box className="skill">
       <Heading size="md" mb={'16px'} color={'gray.200'}>{skill.name}</Heading>
       <Image
-        sx={{ height: "64px", width: "auto" }}
+        sx={{ height: "64px" }}
         src={skill.image}
         alt={skill.name}
       />
