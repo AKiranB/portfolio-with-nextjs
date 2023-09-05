@@ -1,15 +1,13 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import { Container } from "../components/chakra/Container";
-import { Main } from "../components/chakra/Main";
 import "../components/nav/nav.css";
-
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
 import "@fontsource/roboto";
 import "./index.css";
+import "../components/about/about.css";
 import Particles from "react-tsparticles";
-import { theme as colors } from "../constants/colors";
 import Navbar from "../components/nav/Navbar";
 
 function MyApp({ Component, pageProps }) {
@@ -92,9 +90,7 @@ function MyApp({ Component, pageProps }) {
           }}
         />
         <Container>
-          <Main>
-            <Component {...pageProps} />
-          </Main>
+          <Component {...pageProps} />
         </Container>
       </ColorModeProvider>
     </ChakraProvider>

@@ -1,16 +1,26 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
-import { theme } from "../../constants/colors";
+import { useState, useEffect } from "react";
 
 export const Container = (props) => {
-  const { colorMode } = useColorMode();
-  const color = { light: "black", dark: "white" };
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    const handleWidth = () => {
+      const width = window.innerWidth;
+      setScreenWidth(width);
+    };
+
+    window.addEventListener("resize", handleWidth);
+    return () => {
+      window.removeEventListener("resize", handleWidth);
+    };
+  }, []);
 
   return (
     <Flex
-      minHeight={"100vh"}
-      maxWidgth={"100vw"}
+      justifyContent={screenWidth > 768 ? "center" : "flex-start"}
       bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
-      color={color[colorMode]}
+      className="container"
       {...props}
     />
   );

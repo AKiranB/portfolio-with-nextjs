@@ -1,4 +1,4 @@
-import { Grid, GridItem, Image, Center, Box, Heading } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Heading } from "@chakra-ui/react";
 
 const About = () => {
   return (
@@ -11,24 +11,33 @@ const About = () => {
       fontWeight="bold"
       mt={"240px"}
     >
-      <GridItem area={"header"}>
-        <Heading fontSize={"96px"}>Hey there, I'm Kiran</Heading>
-      </GridItem>
-
-      <GridItem
-        color={"gray.200"}
-        mt={"32px"}
-        pl="2"
-        area={"main"}
-        maxWidth={"600px"}
+      <Box
+        className="headerContainer"
+        sx={{
+          marginLeft: "64px",
+          marginRight: "64px",
+        }}
       >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged
-      </GridItem>
+        <GridItem area={"header"}>
+          <Heading className="heading" fontSize={"96px"}>
+            Hey there, I'm Kiran
+          </Heading>
+        </GridItem>
+        <GridItem
+          color={"gray.200"}
+          mt={"32px"}
+          pl="2"
+          area={"main"}
+          maxWidth={"600px"}
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged
+        </GridItem>
+      </Box>
     </Grid>
   );
 };

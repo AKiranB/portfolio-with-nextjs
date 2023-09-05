@@ -1,0 +1,12 @@
+@media screen and (max-width: 599px) {
+  /* Your CSS styles for screens below 600px wide go here */
+  /* For example, you can change the background color of a div */
+  .heading {
+    font-size: 4rem !important
+  }
+.headerContainer {
+    width: 400px !important
+}
+}
+
+
