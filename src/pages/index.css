@@ -1,8 +1,12 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+  width: "100vw";
+}
 
+body {
+  min-width: "100vw";
+}
 
-  .particles{
-    z-index: -1 !important ;
-  }
+.particles {
+  z-index: -1 !important ;
+}

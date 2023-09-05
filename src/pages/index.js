@@ -1,18 +1,16 @@
-import { Hero } from "../components/hero/Hero";
 import About from "../components/about/About";
-import { Flex } from "@chakra-ui/react";
-
-import Projects from "../components/projects/Projects";
-import Contact from "../components/contact/Contact";
-import { theme } from "../constants/colors";
+import { Box, Flex } from "@chakra-ui/react";
+import Skills from "../components/skills";
 
 const Index = () => (
   <>
-    <Flex direction={"column"} align={"center"}>
-      <Hero />
-      <About />
-      <Projects sx={{ marginTop: "256px" }} />
-      <Contact sx={{ marginTop: "256px" }} />
+    <Flex alignItems={"center"} justifyContent={"center"} direction={"column"}>
+      <Box>
+        <About />
+        <Skills />
+      </Box>
+      {/* <Projects sx={{ marginTop: 0 }} />
+      <Contact sx={{ marginTop: 0 }} /> */}
     </Flex>
   </>
 );

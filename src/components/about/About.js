@@ -1,117 +1,44 @@
-import {
-  Box,
-  Flex,
-  Badge,
-  Heading,
-  Wrap,
-  WrapItem,
-  Center,
-} from "@chakra-ui/react";
-import { skillsDataLeft } from "../../constants/skillsData";
-import { skillsDataRight } from "../../constants/skillsData";
-import { theme } from "../../constants/colors";
+import { Grid, GridItem, Box, Heading } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Center minWidth={"940px"} width={"70%"}>
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        flexDirection={"row"}
-        mb={"0"}
-        mt={"5%"}
-        backgroundColor={theme.primary.white}
-        borderRadius={"5px"}
-        border={`1px solid ${theme.primary.body}`}
-        height={"auto"}
+    <Grid
+      templateAreas={`"header header"
+                    "nav main"
+                    "nav footer"`}
+      gridTemplateRows={"auto 1fr auto"}
+      gridTemplateColumns={"auto 1fr"}
+      fontWeight="bold"
+      mt={"240px"}
+    >
+      <Box
+        className="headerContainer"
+        sx={{
+          marginLeft: "64px",
+          marginRight: "64px",
+        }}
       >
-        <Flex mb={"40px"} pl={"30px"} flexDirection={"column"}>
-          <Heading
-            marginTop={"30px"}
-            color={theme.primary.body}
-            fontSize={["sm", "xl"]}
-          >
-            {" "}
-            About me
+        <GridItem area={"header"}>
+          <Heading className="heading" fontSize={"96px"}>
+            Hey there, I'm Kiran
           </Heading>
-          <Box color={theme.primary.body} padding={0} fontSize={"md"}>
-            <br /> I am a web-developer with two years of professional
-            experience based in Berlin, Germany. In my previous roles, I have
-            worked extensively with a wide range of technologies and tools,
-            including React, TypeScript, Material UI, CSS3, HTML, Apollo Client,
-            Storybook, and NX. These tools have allowed me to develop dynamic
-            and responsive front-end applications that provide an exceptional
-            user experience. I am an enthusiastic, self-driven learner and
-            sharer and consumer of knowledge, who enjoys the challenges of
-            problem-solving both individually and in a team.
-            <br />
-            <br />
-            In my free time, I am a callisthenics fanatic, avid music producer,
-            sound designer and synthesizer enthusiast with a particular interest
-            in modular synthesis.
-          </Box>
-        </Flex>
-        <Flex
-          borderRadius="lg"
-          m="25px"
-          p="15px"
-          width={"100%"}
-          direction={"column"}
-          justifyContent={"flex-start"}
-          alignItems={"center"}
+        </GridItem>
+        <GridItem
+          color={"gray.200"}
+          mt={"32px"}
+          pl="2"
+          area={"main"}
+          maxWidth={"600px"}
         >
-          <Heading
-            color={theme.primary.body}
-            mb={"10px"}
-            fontSize={["sm", "xl"]}
-          >
-            {" "}
-            Skills{" "}
-          </Heading>
-          <Flex
-            justifyContent="center"
-            alignItems="center"
-            flexDirection={"row"}
-          >
-            <Wrap display={"flex"}>
-              <Box>
-                {skillsDataLeft.map((skill, i) => {
-                  return (
-                    <WrapItem pt={"5px"} key={i}>
-                      <Badge
-                        color={theme.primary.white}
-                        backgroundColor={theme.secondary.purple}
-                        borderRadius={"3px"}
-                        fontSize={["sm"]}
-                      >
-                        {skill}
-                      </Badge>
-                    </WrapItem>
-                  );
-                })}
-              </Box>
-              <Box>
-                {skillsDataRight.map((skill, i) => {
-                  return (
-                    <WrapItem pt={"5px"} key={i}>
-                      <Badge
-                        color={theme.primary.white}
-                        backgroundColor={theme.secondary.purple}
-                        fontSize={["sm"]}
-                        colorScheme={"black"}
-                        borderRadius={"3px"}
-                      >
-                        {skill}
-                      </Badge>
-                    </WrapItem>
-                  );
-                })}
-              </Box>
-            </Wrap>
-          </Flex>
-        </Flex>
-      </Flex>
-    </Center>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged
+        </GridItem>
+      </Box>
+    </Grid>
   );
 };
 

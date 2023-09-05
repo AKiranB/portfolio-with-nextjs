@@ -3,7 +3,7 @@ import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 const fonts = {
   heading: "Raleway",
-  body: "Raleway",
+  body: "Roboto",
 };
 
 const breakpoints = createBreakpoints({
