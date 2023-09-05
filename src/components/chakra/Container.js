@@ -2,7 +2,7 @@ import { Flex, useColorMode } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
 export const Container = (props) => {
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(800);
 
   useEffect(() => {
     const handleWidth = () => {
