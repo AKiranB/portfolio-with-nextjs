@@ -17,7 +17,7 @@ export default function SkillCard({ skill }) {
   const opacity = scrollValue * 0.003 ; 
   const translateY = 107 - scrollValue * 0.2; 
 
-  console.log(translateY);
+
 
   return (
     <Box
