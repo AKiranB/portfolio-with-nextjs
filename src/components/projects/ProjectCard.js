@@ -1,6 +1,16 @@
-import { Box, Flex, Text, Image, Stack, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Text,
+  Image,
+  Stack,
+  Button,
+  Heading,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import { theme } from "../../constants/colors";
+import { ArrowForwardIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import { useState } from "react";
 
 const ProjectCard = ({
   title,
@@ -9,8 +19,20 @@ const ProjectCard = ({
   appUrl,
   githubUrl,
   learnMore,
+  handleProjectChange,
 }) => {
-  console.log(img);
+  const [imageIndex, setImageIndex] = useState(0);
+  const handleIndexChange = () => {
+    if (imageIndex + 1 >= img.length) {
+      setImageIndex(0);
+    } else {
+      setImageIndex(imageIndex + 1);
+    }
+  };
+
+  const multipleImages = typeof img === "object";
+
+  console.log(multipleImages);
   return (
     <Flex
       borderRadius={"8px"}
@@ -24,24 +46,56 @@ const ProjectCard = ({
       <Box
         borderRadius={"8px"}
         opacity={1}
-        sx={{ maxHeight: "auto", padding: "8px" }}
+        sx={{ maxHeight: "auto", padding: "8px", position: "relative" }}
       >
-        <Image sx={{ height: "512px", borderRadius: "8px" }} src={img} />
+        <Image
+          sx={{ maxHeight: "512px", borderRadius: "8px" }}
+          src={multipleImages ? img[imageIndex] : img}
+        />
+        <Flex
+          justifyContent="flex-end"
+          alignItems="center"
+          position="absolute"
+          top={0}
+          left={0}
+          right={0}
+          bottom={0}
+        >
+          {multipleImages && (
+            <Button
+              onClick={() => handleIndexChange()}
+              rightIcon={<ArrowForwardIcon />}
+            >
+              Next
+            </Button>
+          )}
+        </Flex>
       </Box>
       <Box>
-        <Box color={"gray.100"} sx={{ padding: "16px" }} width={"512px"}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged{" "}
+        <Box
+          color={"gray.100"}
+          sx={{ padding: "16px" }}
+          minHeight={"256px"}
+          width={"758px"}
+        >
+          <Heading mb={"16px"}>{title}</Heading>
+          {description}
         </Box>
-        <Box sx={{ padding: "16px" }}>
+        <Box display={"flex"} sx={{ padding: "16px" }}>
           <Button sx={{ backgroundColor: "blue.400" }} variant="solid">
             Learn More
           </Button>
           <Button sx={{ marginLeft: "16px" }}>Github </Button>
+          <Box display={"flex"} width={"100%"} justifyContent={"flex-end"}>
+            <Button
+              rightIcon={<ArrowRightIcon color={"white"} />}
+              onClick={handleProjectChange}
+              color={"white"}
+              variant="outline"
+            >
+              Next Project
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Flex>

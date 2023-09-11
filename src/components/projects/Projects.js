@@ -6,7 +6,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const Projects = ({ ...props }) => {
   const [index, setCurrentIndex] = useState(0);
-  const handleIndexChange = () => {
+  const handleProjectChange = () => {
     if (index + 1 >= projectData.length) {
       setCurrentIndex(0);
     } else {
@@ -32,18 +32,8 @@ const Projects = ({ ...props }) => {
         githubUrl={projectData[index].githubUrl}
         img={projectData[index].img}
         learnMore={projectData[index].learnMore}
+        handleProjectChange={handleProjectChange}
       />
-
-      {/* <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Button
-          rightIcon={<ArrowRightIcon color={"white"} />}
-          onClick={handleIndexChange}
-          colorScheme="white"
-          variant="outline"
-        >
-          Next
-        </Button>
-      </Box> */}
     </Box>
   );
 };
