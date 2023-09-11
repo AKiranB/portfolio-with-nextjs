@@ -21,8 +21,6 @@ function MyApp({ Component, pageProps }) {
       >
         <Navbar />
         <Particles
-          className="particles"
-          id="tsparticles"
           options={{
             fpsLimit: 60,
             interactivity: {

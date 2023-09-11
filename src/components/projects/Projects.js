@@ -18,25 +18,23 @@ const Projects = ({ ...props }) => {
     <Box
       {...props}
       id="projects"
-      justifyContent={"center"}
-      alignItems={"center"}
       flexDirection={"row"}
+      sx={{ marginTop: "386px", marginBottom: "386px" }}
     >
-      <Center marginBottom={"64px"} p="0">
-        <Heading> Projects</Heading>
-      </Center>
-      <Flex justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
-        <ProjectCard
-          key={index}
-          title={projectData[index].title}
-          description={projectData[index].description}
-          appUrl={projectData[index].appUrl}
-          githubUrl={projectData[index].githubUrl}
-          img={projectData[index].img}
-          learnMore={projectData[index].learnMore}
-        />
-      </Flex>
-      <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
+      <Heading fontSize={"64px"} mb={"64px"}>
+        Projects
+      </Heading>
+      <ProjectCard
+        key={index}
+        title={projectData[index].title}
+        description={projectData[index].description}
+        appUrl={projectData[index].appUrl}
+        githubUrl={projectData[index].githubUrl}
+        img={projectData[index].img}
+        learnMore={projectData[index].learnMore}
+      />
+
+      {/* <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
         <Button
           rightIcon={<ArrowRightIcon color={"white"} />}
           onClick={handleIndexChange}
@@ -45,7 +43,7 @@ const Projects = ({ ...props }) => {
         >
           Next
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

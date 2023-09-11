@@ -17,7 +17,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <Box sx={{ margin: "386px 64px 128px 64px" }}>
+    <Box sx={{ margin: "386px 0px 128px 0px" }}>
       <Heading fontSize={"64px"} mb={"64px"}>
         My Skills
       </Heading>

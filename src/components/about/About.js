@@ -11,13 +11,7 @@ const About = () => {
       fontWeight="bold"
       mt={"240px"}
     >
-      <Box
-        className="headerContainer"
-        sx={{
-          marginLeft: "64px",
-          marginRight: "64px",
-        }}
-      >
+      <Box className="headerContainer">
         <GridItem area={"header"}>
           <Heading className="heading" fontSize={"96px"}>
             Hey there, I'm Kiran
