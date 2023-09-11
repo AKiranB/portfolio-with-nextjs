@@ -1,8 +1,8 @@
 const projectData = [
   {
     title: "Weeve",
-    img: "/weeve.png",
-    description: `weeve is an “Integration Platform as a Service” that bridges the gap between the complexity of Internet of Things (IoT) and the demands of today’s Data Driven Business Systems.During my time at weeve I had the chance to gain professional experience in Software development using TypeScript and React, working alongside UX and product designers and embedded engineers to create a low-code IoT platform.`,
+    img: ["/weeve3.png", "/weeve4.png", "/weeve5.png", "/weeve6.png"],
+    description: `Weeve is an “Integration Platform as a Service” that bridges the gap between the complexity of Internet of Things (IoT) and the demands of today’s Data Driven Business Systems. During my one and a half years at weeve, I had the chance to gain professional experience in Software development using TypeScript and React, working alongside UX and product designers and embedded engineers to create a low-code IoT platform.`,
     appUrl: "https://weeve.network/",
     stack: ["React", "TypeScript", "Material UI", "Storybook", "Apollo Client"],
     learnMore: "/weeve",
