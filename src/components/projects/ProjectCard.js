@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  Text,
-  Image,
-  Stack,
-  Button,
-  Heading,
-} from "@chakra-ui/react";
-import Link from "next/link";
-import { theme } from "../../constants/colors";
+import { Box, Flex, Image, Button, Heading } from "@chakra-ui/react";
 import { ArrowForwardIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 
@@ -18,7 +8,7 @@ const ProjectCard = ({
   img,
   appUrl,
   githubUrl,
-  learnMore,
+
   handleProjectChange,
 }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -82,10 +72,23 @@ const ProjectCard = ({
           {description}
         </Box>
         <Box display={"flex"} sx={{ padding: "16px" }}>
-          <Button sx={{ backgroundColor: "blue.400" }} variant="solid">
-            Learn More
-          </Button>
-          <Button sx={{ marginLeft: "16px" }}>Github </Button>
+          {appUrl && (
+            <a target="_blank" href={appUrl}>
+              <Button
+                sx={{ backgroundColor: "white", marginRight: "16px" }}
+                variant="solid"
+              >
+                View
+              </Button>
+            </a>
+          )}
+          {githubUrl && (
+            <a target="_blank" href={githubUrl}>
+              <Button sx={{ backgroundColor: "blue.400" }} variant="solid">
+                Github
+              </Button>
+            </a>
+          )}
           <Box display={"flex"} width={"100%"} justifyContent={"flex-end"}>
             <Button
               rightIcon={<ArrowRightIcon color={"white"} />}

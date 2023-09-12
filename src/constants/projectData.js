@@ -12,7 +12,6 @@ const projectData = [
     img: "/archimidi.png",
     description:
       "ArchiMidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview MIDI files. ArchiMidi utilizes Cloudinary for file storage and Material UI as the component library as well as using the HTML-midi-player library powered by Magenta.js to preview MIDI in the browser.d ",
-    appUrl: "https://archimidiv2.herokuapp.com/",
     stack: ["React", "Node", "Express", "MongoDB", "Mongoose", "Cloudinary"],
     githubUrl: "https://www.github.com/AKiranB/Archimidi-v2",
   },
@@ -21,7 +20,7 @@ const projectData = [
     img: "/quiz.png",
     description:
       "A Quiz application that allows users to answer questions and test their knowledge in a category with a level of difficulty of their choosing. This project is built with React, TypeScript and Chakra UI and uses the Open Trivia API to source questions. This project was created to hone my skills in transitions and smooth UI changes.",
-    appUrl: "https://akiranb.github.io/React-TS-Quiz/",
+    appUrl: "https://dev--ts-react-quizzzapp.netlify.app/",
     stack: ["React", "TypeScript", "Chakra UI", "Open Trivia API"],
     githubUrl: "https://github.com/AKiranB/React-TS-Quiz",
   },

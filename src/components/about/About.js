@@ -1,4 +1,4 @@
-import { Grid, GridItem, Box, Heading } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Heading, Image, Flex } from "@chakra-ui/react";
 
 const About = () => {
   return (
@@ -12,10 +12,19 @@ const About = () => {
       mt={"240px"}
     >
       <Box className="headerContainer">
-        <GridItem area={"header"}>
+        <GridItem className="gridItemHeading" area={"header"}>
           <Heading className="heading" fontSize={"96px"}>
-            Hey there, I'm Kiran
+            Hey there, I'm
           </Heading>
+          <Flex id="image_heading" alignItems="center">
+            <Heading className="heading" fontSize={"96px"}>
+              Kiran
+            </Heading>{" "}
+            <Image
+              sx={{ height: "82px", borderRadius: "50%", marginLeft: "16px" }}
+              src={"/kiran.jpg"}
+            />
+          </Flex>
         </GridItem>
         <GridItem
           color={"gray.200"}
@@ -24,14 +33,14 @@ const About = () => {
           area={"main"}
           maxWidth={"600px"}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged
+          I'm a Fullstack web developer focused on creating fluid, user friendly
+          and performant user interfaces. I'm currently searching for a new role
+          as a Frontend Developer based in Berlin. With several years of
+          professional experience in software development utilizing React and
+          TypeScript, I am certain that I can bring value to your team from day
+          one.
         </GridItem>
-      </Box>
+      </Box>{" "}
     </Grid>
   );
 };
