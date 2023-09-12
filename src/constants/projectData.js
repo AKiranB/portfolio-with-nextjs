@@ -12,7 +12,6 @@ const projectData = [
     img: "/archimidi.png",
     description:
       "ArchiMidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview MIDI files. ArchiMidi utilizes Cloudinary for file storage and Material UI as the component library as well as using the HTML-midi-player library powered by Magenta.js to preview MIDI in the browser.d ",
-
     stack: ["React", "Node", "Express", "MongoDB", "Mongoose", "Cloudinary"],
     githubUrl: "https://www.github.com/AKiranB/Archimidi-v2",
   },

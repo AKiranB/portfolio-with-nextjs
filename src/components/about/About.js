@@ -1,4 +1,4 @@
-import { Grid, GridItem, Box, Heading } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Heading, Image, Flex } from "@chakra-ui/react";
 
 const About = () => {
   return (
@@ -12,10 +12,19 @@ const About = () => {
       mt={"240px"}
     >
       <Box className="headerContainer">
-        <GridItem area={"header"}>
+        <GridItem className="gridItemHeading" area={"header"}>
           <Heading className="heading" fontSize={"96px"}>
-            Hey there, I'm Kiran
+            Hey there, I'm
           </Heading>
+          <Flex id="image_heading" alignItems="center">
+            <Heading className="heading" fontSize={"96px"}>
+              Kiran
+            </Heading>{" "}
+            <Image
+              sx={{ height: "82px", borderRadius: "50%", marginLeft: "16px" }}
+              src={"/kiran.jpg"}
+            />
+          </Flex>
         </GridItem>
         <GridItem
           color={"gray.200"}
