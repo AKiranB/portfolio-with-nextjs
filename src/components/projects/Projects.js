@@ -1,8 +1,7 @@
-import { Box, Center, Flex, Image, Button, Heading } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectData from "../../constants/projectData";
 import { useState } from "react";
-import { ArrowRightIcon } from "@chakra-ui/icons";
 
 const Projects = ({ ...props }) => {
   const [index, setCurrentIndex] = useState(0);
@@ -13,7 +12,6 @@ const Projects = ({ ...props }) => {
       setCurrentIndex(index + 1);
     }
   };
-
   return (
     <Box
       {...props}

@@ -24,14 +24,14 @@ const About = () => {
           area={"main"}
           maxWidth={"600px"}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged
+          I'm a Fullstack web developer focused on creating fluid, user friendly
+          and performant user interfaces. I'm currently searching for a new role
+          as a Frontend Developer based in Berlin. With several years of
+          professional experience in software development utilizing React and
+          TypeScript, I am certain that I can bring value to your team from day
+          one.
         </GridItem>
-      </Box>
+      </Box>{" "}
     </Grid>
   );
 };

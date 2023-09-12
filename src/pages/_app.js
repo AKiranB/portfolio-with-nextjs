@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }) {
                   enable: true,
                   area: 1000,
                 },
-                value: 80,
+                value: 20,
               },
               opacity: {
                 value: 0.5,
