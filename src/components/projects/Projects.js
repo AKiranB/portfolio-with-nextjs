@@ -2,6 +2,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import projectData from "../../constants/projectData";
 import { useState } from "react";
+import ProjectsPanel from "./ProjectsPanel";
 
 const Projects = ({ ...props }) => {
   const [index, setCurrentIndex] = useState(0);
@@ -22,16 +23,7 @@ const Projects = ({ ...props }) => {
       <Heading fontSize={"64px"} mb={"64px"}>
         Projects
       </Heading>
-      <ProjectCard
-        key={index}
-        title={projectData[index].title}
-        description={projectData[index].description}
-        appUrl={projectData[index].appUrl}
-        githubUrl={projectData[index].githubUrl}
-        img={projectData[index].img}
-        learnMore={projectData[index].learnMore}
-        handleProjectChange={handleProjectChange}
-      />
+      <ProjectsPanel projectData={projectData} />
     </Box>
   );
 };
