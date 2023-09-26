@@ -1,7 +1,7 @@
 import About from "../components/about/About";
 import { Box, Flex } from "@chakra-ui/react";
 import Skills from "../components/skills";
-import Projects from "../components/projects/Projects";
+import Projects from "../components/projects/index";
 
 const Index = () => (
   <>

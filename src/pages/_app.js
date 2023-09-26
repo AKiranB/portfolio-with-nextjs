@@ -7,7 +7,6 @@ import "@fontsource/open-sans/700.css";
 import "@fontsource/roboto";
 import "./index.css";
 import "../components/about/about.css";
-import "../components/skills/skills.css";
 import Particles from "react-tsparticles";
 import Navbar from "../components/nav/Navbar";
 
