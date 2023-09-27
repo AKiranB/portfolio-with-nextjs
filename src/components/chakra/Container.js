@@ -19,6 +19,7 @@ export const Container = (props) => {
   return (
     <Flex
       justifyContent={screenWidth > 768 ? "center" : "flex-start"}
+      minHeight={"100vh"}
       bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
       className="container"
       {...props}
