@@ -7,9 +7,7 @@ const ProjectCard = ({
   description,
   img,
   appUrl,
-  githubUrl,
-
-  handleProjectChange,
+  githubUrl
 }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const handleIndexChange = () => {
@@ -19,10 +17,7 @@ const ProjectCard = ({
       setImageIndex(imageIndex + 1);
     }
   };
-
   const multipleImages = typeof img === "object";
-
-  console.log(multipleImages);
   return (
     <Flex
       borderRadius={"8px"}
@@ -89,16 +84,6 @@ const ProjectCard = ({
               </Button>
             </a>
           )}
-          <Box display={"flex"} width={"100%"} justifyContent={"flex-end"}>
-            <Button
-              rightIcon={<ArrowRightIcon color={"white"} />}
-              onClick={handleProjectChange}
-              color={"white"}
-              variant="outline"
-            >
-              Next Project
-            </Button>
-          </Box>
         </Box>
       </Box>
     </Flex>

@@ -9,7 +9,7 @@ const projectData = [
   },
   {
     title: "ArchiMidi",
-    img: "/archimidi.png",
+    img: ["/archimidi.png"],
     description:
       "ArchiMidi is a Full Stack, MERN MIDI database website, where users can upload, favourite, download and preview MIDI files. ArchiMidi utilizes Cloudinary for file storage and Material UI as the component library as well as using the HTML-midi-player library powered by Magenta.js to preview MIDI in the browser.d ",
     stack: ["React", "Node", "Express", "MongoDB", "Mongoose", "Cloudinary"],
@@ -17,7 +17,7 @@ const projectData = [
   },
   {
     title: "React-TypeScript-Quiz",
-    img: "/quiz.png",
+    img: ["/quiz.png"],
     description:
       "A Quiz application that allows users to answer questions and test their knowledge in a category with a level of difficulty of their choosing. This project is built with React, TypeScript and Chakra UI and uses the Open Trivia API to source questions. This project was created to hone my skills in transitions and smooth UI changes.",
     appUrl: "https://dev--ts-react-quizzzapp.netlify.app/",
@@ -26,7 +26,7 @@ const projectData = [
   },
   {
     title: "Castles, Fruits and Bats",
-    img: "/fruits-bats.png",
+    img: ["/fruits-bats.png"],
     description: `Castles, Fruits and Bats is a side-scrolling, jump and run game built with JavaScript and the P5 library. Collect as much fruit as you can within the time limit and avoid the fire and bats!`,
     appUrl: "https://akiranb.github.io/Fruits-Bats/",
     stack: ["JavaScript", "P5", "Canvas"],
