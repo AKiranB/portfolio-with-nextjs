@@ -7,8 +7,7 @@ const ProjectCard = ({
   description,
   img,
   appUrl,
-  githubUrl,
-
+  githubUrl
 }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const handleIndexChange = () => {
@@ -85,7 +84,6 @@ const ProjectCard = ({
               </Button>
             </a>
           )}
-
         </Box>
       </Box>
     </Flex>
