@@ -60,11 +60,9 @@ const ProjectCard = ({
         <Box
           color={"gray.100"}
           sx={{ padding: "16px" }}
-          minHeight={"256px"}
           width={"758px"}
         >
           <Heading mb={"16px"}>{title}</Heading>
-          {description}
         </Box>
         <Box display={"flex"} sx={{ padding: "16px" }}>
           {appUrl && (
