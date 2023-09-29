@@ -1,4 +1,4 @@
-import { Grid, GridItem, Box, Heading, Image, Flex } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Heading, Image, Flex, Text, Badge } from "@chakra-ui/react";
 
 const About = () => {
   return (
@@ -33,12 +33,21 @@ const About = () => {
           area={"main"}
           maxWidth={"600px"}
         >
-          I'm a Fullstack web developer focused on creating fluid, user friendly
-          and performant user interfaces. I'm currently searching for a new role
-          as a Frontend Developer based in Berlin. With several years of
-          professional experience in software development utilizing React and
-          TypeScript, I am certain that I can bring value to your team from day
-          one.
+          I'm a Fullstack web developer focused on creating fluid, user-friendly,
+          and performant user interfaces. I'm currently searching for a new role as a {" "}
+
+          Frontend Developer
+
+          based in Berlin. With several years of professional
+          experience in software development utilizing{" "}
+          <Badge fontSize={'12px'} as="span" fontWeight="bold" color="gray.200">
+            React
+          </Badge>{" "}
+          and{" "}
+          <Badge fontSize={'12px'} as="span" fontWeight="bold" color="gray.200">
+            TypeScript
+          </Badge>
+          , I am certain that I can bring value to your team from day one.
         </GridItem>
       </Box>{" "}
     </Grid>

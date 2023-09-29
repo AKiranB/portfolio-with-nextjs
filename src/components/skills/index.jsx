@@ -5,7 +5,7 @@ import useGetScreenSize from "../../hooks/useGetScreenSize";
 import useGetScrollValue from "../../hooks/useGetScrollValue";
 
 export default function Skills() {
-  const screenWidth = useGetScreenSize();
+
   const scrollValue = useGetScrollValue();
   const opacity = scrollValue * 0.003;
   const translateY = 107 - scrollValue * 0.2;
@@ -15,7 +15,10 @@ export default function Skills() {
       <Heading fontSize={"64px"} mb={"64px"}>
         My Skills
       </Heading>
-      <Grid sx={{ translate: translateY < 0 ? '0px' : `${translateY}px`, opacity: opacity, }} templateColumns={`repeat(${screenWidth < 700 ? 2 : 4}, 1fr)`} gap={32}>
+      <Grid sx={{ translate: translateY < 0 ? '0px' : `${translateY}px`, opacity: opacity, }} templateColumns={{
+        base: "repeat(2, 2fr)",
+        md: "repeat(4, 1fr)", // Set to two columns for screens of medium size and larger
+      }} gap={32}>
         {skillsData.map((skill) => {
           return <SkillCard skill={skill} />;
         })}
