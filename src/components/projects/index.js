@@ -17,8 +17,9 @@ const Projects = ({ ...props }) => {
       <Box
         {...props}
         id="projects"
+
         flexDirection={"row"}
-        sx={{ marginTop: "386px", marginBottom: "386px" }}
+
       >
         <Heading fontSize={"64px"} mb={"64px"}>
           Projects

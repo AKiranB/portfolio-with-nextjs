@@ -1,29 +1,28 @@
 @media screen and (max-width: 599px) {
+
   /* Your CSS styles for screens below 600px wide go here */
   /* For example, you can change the background color of a div */
   .heading {
     font-size: 4rem !important
   }
 
- 
-.headerContainer {
-    width: 400px !important
-}
 }
 
 
 @media screen and (min-width: 1100px) {
+
   /* Your CSS styles for screens below 600px wide go here */
   /* For example, you can change the background color of a div */
-  .gridItemHeading{
+  .gridItemHeading {
     display: flex !important
-    
   }
 }
+
 @media screen and (min-width: 1099px) {
+
   /* Your CSS styles for screens below 600px wide go here */
   /* For example, you can change the background color of a div */
-  #image_heading{ 
+  #image_heading {
     margin-left: 24px
   }
 }

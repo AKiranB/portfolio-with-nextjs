@@ -24,7 +24,7 @@ const Navbar = (props) => {
         <NavLinks link="#about">
           <Image width={"120px"} alt="me" src="/kiranboyle.png" />
         </NavLinks>
-        <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
+        <Box display={{ base: "block", md: "none" }} marginRight={'16px'} onClick={handleToggle}>
           <HamburgerIcon />
         </Box>
 

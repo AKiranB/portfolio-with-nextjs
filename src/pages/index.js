@@ -1,24 +1,30 @@
 import About from "../components/about/About";
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex, VStack } from "@chakra-ui/react";
 import Skills from "../components/skills";
 import Projects from "../components/projects/index";
 
 const Index = () => (
   <>
     <Flex
-      minHeight={"100vh"}
-      alignItems={"center"}
+      flexDirection={"column"}
       justifyContent={"center"}
-      direction={"column"}
+      alignItems={'center'}
+      minHeight={'100vh'}
+      bgGradient={"linear(to-b, #3a7bd5, #3a6073 100%)"}
+      px={4}
     >
-      <Box sx={{ margin: "0px 64px 0px 64px" }}>
+      <VStack
+        sx={{ maxWidth: '1024px', }}
+        spacing={80}
+        align={'stretch'}
+        marginBottom={'128px'}
+      >
         <About />
         <Skills />
-        <Projects sx={{ marginTop: 0 }} />
-      </Box>
-
-      {/* <Contact sx={{ marginTop: 0 }} /> */}
+        <Projects />
+      </VStack>
     </Flex>
+
   </>
 );
 

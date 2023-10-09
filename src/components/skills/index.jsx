@@ -11,11 +11,11 @@ export default function Skills() {
   const translateY = 107 - scrollValue * 0.2;
 
   return (
-    <Box sx={{ margin: "386px 0px 128px 0px" }}>
+    <Box>
       <Heading fontSize={"64px"} mb={"64px"}>
         My Skills
       </Heading>
-      <Grid sx={{ translate: translateY < 0 ? '0px' : `${translateY}px`, opacity: opacity, }} templateColumns={{
+      <Grid templateColumns={{
         base: "repeat(2, 2fr)",
         md: "repeat(4, 1fr)", // Set to two columns for screens of medium size and larger
       }} gap={32}>
@@ -23,6 +23,6 @@ export default function Skills() {
           return <SkillCard skill={skill} />;
         })}
       </Grid>
-    </Box>
+    </Box >
   );
 }
